@@ -1,0 +1,16 @@
+{
+ "levels": {
+  "tiny": {
+   "f": "agent_0401m4wq01cnetx9jnx22jqcz1xt",
+   "m": "agent_2101m4wq02syfrn9whvxfbfrjcms"
+  },
+  "starter": {
+   "f": "agent_3401m4wq0483f3gaa3b56268jgyw",
+   "m": "agent_7801m4wq05tae1f80zvxwegkhw58"
+  },
+  "basic": {
+   "f": "agent_7101m4wq0793e6eafgbwd1rpk5bb",
+   "m": "agent_4401m4wq09bcf8fr3hwsw8f60dn4"
+  }
+ }
+}

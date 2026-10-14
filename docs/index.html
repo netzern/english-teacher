@@ -1,0 +1,1396 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>המורה שלי לאנגלית</title>
+<meta name="description" content="מורה לאנגלית לילדים: בונים דמות, לומדים מילים ודקדוק, ומדברים עם המורה.">
+<meta name="theme-color" content="#2D5A4E">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Varela+Round&display=swap">
+<style>
+/* Layout: a classroom corner — the teacher stands beside a chalkboard; big touch tiles below. */
+:root {
+  --bg: #E7F3EF;
+  --surface: #FFFFFF;
+  --surface-2: #F3F9F7;
+  --ink: #1D2A2E;
+  --ink-soft: #55656A;
+  --line: #CFE3DC;
+  --board: #2D5A4E;
+  --board-edge: #A8784E;
+  --chalk: #F4F8F2;
+  --accent: #FF7A3D;
+  --accent-ink: #FFFFFF;
+  --sun: #FFC53D;
+  --berry: #E2557B;
+  --good: #23955F;
+  --good-bg: #DDF3E7;
+  --warn-bg: #FFF1DC;
+  --shadow: 0 6px 0 rgba(29, 42, 46, .10);
+  --font-display: "Fredoka", "Varela Round", "Arial Rounded MT Bold", system-ui, sans-serif;
+  --font-body: "Varela Round", "Fredoka", system-ui, sans-serif;
+  --r-sm: 12px; --r-md: 20px; --r-lg: 28px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12201C; --surface: #1B2C27; --surface-2: #213530; --ink: #EDF5F1; --ink-soft: #A7BAB3;
+    --line: #2E4640; --board: #234A40; --board-edge: #8A6343; --chalk: #F1F6EF;
+    --good-bg: #183A2A; --warn-bg: #3A2E1A; --shadow: 0 6px 0 rgba(0, 0, 0, .35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12201C; --surface: #1B2C27; --surface-2: #213530; --ink: #EDF5F1; --ink-soft: #A7BAB3;
+  --line: #2E4640; --board: #234A40; --board-edge: #8A6343; --chalk: #F1F6EF;
+  --good-bg: #183A2A; --warn-bg: #3A2E1A; --shadow: 0 6px 0 rgba(0, 0, 0, .35);
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 18px; line-height: 1.5;
+  padding-inline: 16px; padding-block: 0 32px; -webkit-tap-highlight-color: transparent;
+}
+.en { font-family: var(--font-display); unicode-bidi: isolate; direction: ltr; }
+button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 4px solid var(--sun); outline-offset: 3px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+.wrap { max-width: 1040px; margin-inline: auto; }
+
+/* top bar */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; display: flex; align-items: center; gap: 10px; padding-block: 12px; background: var(--bg); }
+.bar .spacer { flex: 1; }
+.icon-btn { width: 52px; height: 52px; border-radius: 50%; background: var(--surface); box-shadow: var(--shadow); font-size: 26px; display: grid; place-items: center; }
+.icon-btn:active { transform: translateY(3px); box-shadow: none; }
+.kid-chip { display: flex; align-items: center; gap: 8px; background: var(--surface); border-radius: 999px; padding: 4px 14px 4px 4px; box-shadow: var(--shadow); font-family: var(--font-display); font-size: 20px; min-width: 0; }
+.kid-chip .mini { width: 44px; height: 44px; border-radius: 50%; background: var(--surface-2); overflow: hidden; flex: none; }
+.kid-chip .stars { color: var(--accent); white-space: nowrap; }
+
+/* screens */
+.screen { display: flex; flex-direction: column; gap: 22px; padding-block: 8px 24px; }
+.title-lg { font-size: clamp(30px, 6vw, 46px); }
+.lede { color: var(--ink-soft); margin: 0; max-width: 60ch; }
+
+/* start overlay */
+.start { min-height: 80vh; display: grid; place-items: center; text-align: center; }
+.start-inner { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.start .avatar-slot { width: min(260px, 60vw); }
+.big-go { font-family: var(--font-display); font-size: 30px; background: var(--accent); color: var(--accent-ink); padding: 18px 44px; border-radius: 999px; box-shadow: 0 8px 0 #C9531F; }
+.big-go:active { transform: translateY(5px); box-shadow: 0 3px 0 #C9531F; }
+
+/* kids grid */
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+.tile { background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--shadow); padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; min-width: 0; position: relative; }
+.tile:active { transform: translateY(4px); box-shadow: none; }
+.tile .face { width: 120px; height: 120px; border-radius: 50%; background: var(--surface-2); overflow: hidden; }
+.tile .name { font-family: var(--font-display); font-size: 24px; }
+.tile .sub { color: var(--ink-soft); font-size: 15px; }
+.tile.add { border: 3px dashed var(--line); background: transparent; box-shadow: none; justify-content: center; color: var(--ink-soft); min-height: 200px; }
+.tile.add .plus { font-size: 54px; line-height: 1; }
+.tile .ic { font-size: 56px; line-height: 1.1; }
+.tile .badge { position: absolute; top: 10px; inset-inline-start: 10px; background: var(--accent); color: var(--accent-ink); font-size: 13px; padding: 2px 10px; border-radius: 999px; font-family: var(--font-display); }
+.tile .stars-row { color: var(--sun); font-size: 20px; letter-spacing: 2px; }
+.tile .stars-row .off { color: var(--line); }
+.section-h { font-size: 24px; display: flex; align-items: center; gap: 10px; }
+.section-h .tag { font-family: var(--font-body); font-size: 14px; background: var(--warn-bg); color: var(--ink-soft); padding: 2px 10px; border-radius: 999px; }
+
+/* stage: teacher + board */
+.stage { display: grid; grid-template-columns: minmax(150px, 30%) 1fr; gap: 18px; align-items: end; }
+.teacher { display: flex; flex-direction: column; align-items: center; gap: 10px; min-width: 0; }
+.avatar-slot { width: 100%; max-width: 260px; aspect-ratio: 200 / 240; }
+.avatar-slot svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.bubble { position: relative; background: var(--surface); border-radius: var(--r-md); padding: 12px 16px; box-shadow: var(--shadow); font-size: 20px; min-height: 52px; width: 100%; text-align: center; overflow-wrap: anywhere; }
+.bubble:empty { visibility: hidden; }
+.bubble[dir="ltr"] { font-family: var(--font-display); }
+.bubble.read-me { background: var(--warn-bg); }
+.bubble.read-me::before { content: "הורה, תקראו לי 👀"; display: block; font-size: 13px; color: var(--ink-soft); direction: rtl; }
+.board { background: var(--board); border: 10px solid var(--board-edge); border-radius: var(--r-md); color: var(--chalk); min-height: 260px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; position: relative; min-width: 0; }
+.board .pic { font-size: clamp(70px, 14vw, 120px); line-height: 1.1; }
+.board .pic.count { font-size: clamp(34px, 7vw, 56px); letter-spacing: 6px; max-width: 100%; overflow-wrap: anywhere; }
+.board .word { font-family: var(--font-display); font-size: clamp(38px, 8vw, 68px); font-weight: 600; direction: ltr; unicode-bidi: isolate; }
+.board .word.small { font-size: clamp(28px, 5.5vw, 46px); }
+.board .tr { font-size: 22px; opacity: .85; }
+.board .chalk-ledge { position: absolute; bottom: -10px; inset-inline: 18%; height: 8px; background: var(--board-edge); border-radius: 0 0 6px 6px; }
+.dots { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.dots i { width: 14px; height: 14px; border-radius: 50%; background: var(--line); }
+.dots i.on { background: var(--accent); }
+.phase { font-family: var(--font-display); color: var(--ink-soft); font-size: 18px; text-align: center; }
+
+.controls { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn { font-family: var(--font-display); font-size: 24px; border-radius: 999px; padding: 12px 28px; background: var(--surface); box-shadow: var(--shadow); display: inline-flex; align-items: center; gap: 10px; }
+.btn:active { transform: translateY(4px); box-shadow: none; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 6px 0 #C9531F; }
+.btn.good { background: var(--good); color: #fff; box-shadow: 0 6px 0 #17663F; }
+.btn.small { font-size: 18px; padding: 8px 18px; }
+.btn[disabled] { opacity: .45; pointer-events: none; }
+
+.choices { display: grid; gap: 16px; grid-template-columns: repeat(var(--cols, 2), minmax(0, 1fr)); }
+.choice { background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--shadow); min-height: 130px; padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border: 4px solid transparent; min-width: 0; }
+.choice .ic { font-size: 64px; line-height: 1.1; }
+.choice .lbl { font-family: var(--font-display); font-size: 22px; direction: ltr; unicode-bidi: isolate; overflow-wrap: anywhere; }
+.choice .tr { color: var(--ink-soft); font-size: 15px; }
+.choice .letter { font-family: var(--font-display); font-size: 60px; font-weight: 600; direction: ltr; }
+.choice.right { border-color: var(--good); background: var(--good-bg); }
+.choice.wrong { animation: shake .4s; opacity: .45; }
+.choice.hint { border-color: var(--sun); animation: pulse 1s infinite; }
+.choice:active { transform: translateY(4px); box-shadow: none; }
+@keyframes shake { 0%,100% { transform: translateX(0) } 25% { transform: translateX(-10px) } 75% { transform: translateX(10px) } }
+@keyframes pulse { 50% { transform: scale(1.05) } }
+
+/* builder */
+.opts { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); }
+.opt { background: var(--surface); border-radius: var(--r-md); box-shadow: var(--shadow); padding: 10px 6px; display: flex; flex-direction: column; align-items: center; gap: 4px; border: 4px solid transparent; min-width: 0; }
+.opt.sel { border-color: var(--accent); }
+.opt .ic { font-size: 40px; line-height: 1.1; }
+.opt .sw { width: 52px; height: 52px; border-radius: 50%; border: 3px solid var(--line); }
+.opt .lbl { font-family: var(--font-display); font-size: 16px; direction: ltr; overflow-wrap: anywhere; }
+.skins { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.skins button { width: 44px; height: 44px; border-radius: 50%; border: 4px solid transparent; box-shadow: var(--shadow); }
+.skins button.sel { border-color: var(--accent); }
+.name-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.field { font: inherit; font-size: 22px; padding: 12px 16px; border-radius: var(--r-sm); border: 3px solid var(--line); background: var(--surface); color: var(--ink); min-width: 0; flex: 1 1 200px; }
+.step-dots { display: flex; gap: 6px; justify-content: center; }
+.step-dots i { width: 28px; height: 8px; border-radius: 4px; background: var(--line); }
+.step-dots i.on { background: var(--accent); }
+
+/* parent */
+.panel { background: var(--surface); border-radius: var(--r-md); padding: 20px; display: flex; flex-direction: column; gap: 14px; box-shadow: var(--shadow); min-width: 0; }
+.panel h2 { font-size: 24px; }
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.row > * { min-width: 0; }
+.kid-row { display: grid; grid-template-columns: 56px 1fr auto; gap: 12px; align-items: center; padding-block: 8px; border-bottom: 2px solid var(--line); }
+.kid-row:last-child { border-bottom: 0; }
+.kid-row .mini { width: 56px; height: 56px; border-radius: 50%; background: var(--surface-2); overflow: hidden; }
+label.lab { display: flex; flex-direction: column; gap: 4px; font-size: 15px; color: var(--ink-soft); }
+select.field, label.lab .field { flex: none; }
+textarea.field { font-size: 14px; min-height: 90px; direction: ltr; font-family: ui-monospace, Consolas, monospace; width: 100%; }
+.note { font-size: 15px; color: var(--ink-soft); margin: 0; }
+.status { font-size: 15px; padding: 8px 12px; border-radius: var(--r-sm); background: var(--surface-2); }
+.status.ok { background: var(--good-bg); }
+.status.warn { background: var(--warn-bg); }
+.confirm { background: var(--warn-bg); border-radius: var(--r-sm); padding: 12px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+/* chat */
+.chat-log { display: flex; flex-direction: column; gap: 10px; max-height: 40vh; overflow-y: auto; padding: 4px; }
+.msg { max-width: 85%; padding: 10px 14px; border-radius: var(--r-md); background: var(--surface); box-shadow: var(--shadow); overflow-wrap: anywhere; }
+.msg.me { align-self: flex-end; background: var(--good-bg); }
+.msg .en { display: block; font-size: 20px; }
+
+/* avatar motion */
+.av { transform-origin: 50% 100%; animation: breathe 3.2s ease-in-out infinite; }
+.av .eyes-open { transform-box: fill-box; transform-origin: center; animation: blink 5s infinite; }
+.av .eyes-happy { display: none; }
+.av.happy .eyes-open { display: none; }
+.av.happy .eyes-happy { display: inline; }
+.av.happy { animation: hop .5s ease-out 2; }
+@keyframes breathe { 50% { transform: scale(1.012, .99) } }
+@keyframes blink { 0%, 93%, 100% { transform: scaleY(1) } 95% { transform: scaleY(.1) } }
+@keyframes hop { 40% { transform: translateY(-14px) } }
+
+.text-choice { min-height: 84px; }
+.text-choice .lbl { font-size: 26px; }
+.choice.used { opacity: .25; pointer-events: none; }
+.board .sentence { line-height: 1.3; overflow-wrap: anywhere; max-width: 100%; }
+.board .en-title { direction: ltr; }
+.hint-chip { background: var(--sun); color: #1D2A2E; border-radius: 999px; padding: 2px 14px; font-size: 18px; }
+.level-pill { align-self: flex-start; background: var(--surface); box-shadow: var(--shadow); border-radius: 999px; padding: 4px 14px; font-family: var(--font-display); color: var(--ink-soft); }
+.banner { display: flex; gap: 12px; align-items: center; background: var(--warn-bg); border-radius: var(--r-md); padding: 14px 18px; font-size: 18px; }
+.banner .ic { font-size: 34px; }
+a.tile, a.btn { text-decoration: none; color: inherit; }
+.talk-tile { background: var(--good-bg); }
+#confetti { position: fixed; inset: 0; pointer-events: none; z-index: 20; width: 100%; height: 100%; }
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .stage { grid-template-columns: 1fr; }
+  .teacher { flex-direction: row; align-items: center; }
+  .teacher .avatar-slot { width: 120px; flex: none; }
+  .board { min-height: 150px; padding: 12px; }
+  .board .pic { font-size: 64px; }
+  .choice { min-height: 110px; }
+  .choice .ic { font-size: 52px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .av, .av .eyes-open, .choice.hint { animation: none !important; }
+}
+</style>
+
+<div class="wrap" dir="rtl" lang="he">
+  <header class="bar" id="bar" hidden>
+    <button class="icon-btn" id="homeBtn" aria-label="מסך הבית">🏠</button>
+    <button class="icon-btn" id="mapBtn" aria-label="השיעורים" hidden>📚</button>
+    <div class="kid-chip" id="kidChip" hidden><span class="mini" id="kidChipFace"></span><span id="kidChipName"></span><span class="stars" id="kidChipStars"></span></div>
+    <span class="spacer"></span>
+    <button class="icon-btn" id="parentBtn" aria-label="אזור הורים">⚙️</button>
+  </header>
+
+  <!-- start -->
+  <section class="screen start" id="s-start">
+    <div class="start-inner">
+      <div class="avatar-slot" id="startAvatar"></div>
+      <h1 class="title-lg">המורה שלי לאנגלית</h1>
+      <p class="lede">לומדים אנגלית עם מורה שבונים בעצמכם: מילים, צבעים, חיות ושיחות קטנות.</p>
+      <button class="big-go" id="startBtn">▶ בואו נתחיל</button>
+    </div>
+  </section>
+
+  <!-- home -->
+  <section class="screen" id="s-home" hidden>
+    <h1 class="title-lg">מי לומד היום?</h1>
+    <div class="grid" id="kidsGrid"></div>
+  </section>
+
+  <!-- parent gate + panel -->
+  <section class="screen" id="s-parent" hidden>
+    <h1 class="title-lg">אזור הורים</h1>
+    <div class="panel" id="gate">
+      <h2>רק להורים</h2>
+      <p class="note">כדי להיכנס, פתרו את התרגיל:</p>
+      <div class="row">
+        <span class="en" id="gateQ" style="font-size:28px"></span>
+        <input class="field" id="gateA" inputmode="numeric" autocomplete="off" aria-label="התשובה" style="flex:0 1 140px">
+        <button class="btn primary small" id="gateGo">כניסה</button>
+      </div>
+      <p class="note" id="gateMsg"></p>
+    </div>
+    <div id="parentPanel" hidden style="display:flex;flex-direction:column;gap:18px">
+      <div class="panel">
+        <h2>הילדים</h2>
+        <div id="kidRows"></div>
+        <form class="row" id="addKidForm">
+          <label class="lab">שם הילד<input class="field" id="newKidName" required maxlength="20"></label>
+          <label class="lab">גיל<input class="field" id="newKidAge" type="number" min="2" max="14" step="0.5" required style="flex:0 1 110px"></label>
+          <button class="btn primary small" type="submit">➕ הוספה ובניית מורה</button>
+        </form>
+        <p class="note">יש 5 רמות. ילד חדש מתחיל ברמה לפי הגיל: עד גיל 5 "קטנטנים", ומגיל 5 "מתחילים". ילד שכבר יודע קצת אנגלית יכול לעשות "מבחן שיבוץ", ואז תאשרו את הרמה שהמבחן ממליץ עליה. אפשר גם לבחור רמה ידנית.</p>
+      </div>
+      <div class="panel">
+        <h2>קול</h2>
+        <div class="status" id="voiceStatus"></div>
+        <div class="status" id="heVoiceStatus"></div>
+        <div class="row">
+          <button class="btn small" id="testF">🔊 קול אישה</button>
+          <button class="btn small" id="testM">🔊 קול גבר</button>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>גיבוי והעברה למכשיר אחר</h2>
+        <p class="note">ההתקדמות נשמרת במכשיר הזה. כדי להעביר אותה, העתיקו את הקוד והדביקו אותו במכשיר השני.</p>
+        <div class="status" id="syncStatus"></div>
+        <textarea class="field" id="backupBox" aria-label="קוד גיבוי" spellcheck="false"></textarea>
+        <div class="row">
+          <button class="btn small" id="exportBtn">📋 יצירת קוד והעתקה</button>
+          <button class="btn small" id="importBtn">📥 שחזור מהקוד</button>
+        </div>
+        <p class="note" id="backupMsg"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- builder -->
+  <section class="screen" id="s-builder" hidden>
+    <div class="step-dots" id="bDots"></div>
+    <div class="stage">
+      <div class="teacher"><div class="avatar-slot" id="bAvatar"></div></div>
+      <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+        <div class="bubble" id="bBubble"></div>
+        <div id="bBody" style="display:flex;flex-direction:column;gap:14px"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="btn" id="bBack">→ אחורה</button>
+      <button class="btn primary" id="bNext">הלאה ←</button>
+    </div>
+  </section>
+
+  <!-- map -->
+  <section class="screen" id="s-map" hidden>
+    <div class="stage" style="align-items:center">
+      <div class="teacher"><div class="avatar-slot" id="mAvatar"></div></div>
+      <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+        <div class="bubble" id="mBubble"></div>
+        <h1 class="title-lg" id="mTitle"></h1>
+        <span class="level-pill" id="mLevel"></span>
+      </div>
+    </div>
+    <div class="banner" id="levelUp" hidden><span class="ic">🏆</span><span id="levelUpText"></span></div>
+    <div id="talkEntry" hidden>
+      <h2 class="section-h">🎤 מדברים עם המורה <span class="tag">נפתח בלשונית חדשה, צריך מיקרופון</span></h2>
+      <div class="grid" id="talkGrid"></div>
+    </div>
+    <h2 class="section-h">📚 שיעורים</h2>
+    <div class="grid" id="lessonGrid"></div>
+    <h2 class="section-h">💬 שיחות</h2>
+    <div class="grid" id="dialogGrid"></div>
+    <div id="chatEntry" hidden>
+      <h2 class="section-h">✨ שיחה חופשית עם המורה <span class="tag">רק כשמחוברים לחשבון</span></h2>
+      <div class="grid"><button class="tile" id="openChat"><span class="ic">🗨️</span><span class="name">מדברים חופשי</span><span class="sub">המורה עונה לכל שאלה</span></button></div>
+    </div>
+  </section>
+
+  <!-- lesson / dialog stage -->
+  <section class="screen" id="s-play" hidden>
+    <div class="phase" id="pPhase"></div>
+    <div class="dots" id="pDots"></div>
+    <div class="stage">
+      <div class="teacher"><div class="avatar-slot" id="pAvatar"></div><div class="bubble" id="pBubble"></div></div>
+      <div class="board" id="pBoard"><span class="chalk-ledge"></span></div>
+    </div>
+    <div class="choices" id="pChoices"></div>
+    <div class="controls" id="pControls"></div>
+  </section>
+
+  <!-- free chat -->
+  <section class="screen" id="s-chat" hidden>
+    <div class="stage" style="align-items:center">
+      <div class="teacher"><div class="avatar-slot" id="cAvatar"></div></div>
+      <div class="chat-log" id="chatLog" aria-live="polite"></div>
+    </div>
+    <div class="choices" id="chatOpts" style="--cols:3"></div>
+    <form class="row" id="chatForm">
+      <input class="field" id="chatInput" placeholder="אפשר גם לכתוב (עברית או English)" maxlength="200" autocomplete="off">
+      <button class="btn primary small" type="submit">שליחה</button>
+      <button class="btn small" type="button" id="chatStop" hidden>עצירה</button>
+    </form>
+    <p class="note" id="chatNote"></p>
+  </section>
+</div>
+<canvas id="confetti" hidden></canvas>
+
+<script>
+"use strict";
+/* ---------------- helpers ---------------- */
+const $ = (id) => document.getElementById(id);
+const el = (tag, attrs = {}, ...kids) => {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v;
+    else if (k === "text") n.textContent = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+    else if (v !== false && v != null) n.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of kids.flat()) if (c != null) n.append(c);
+  return n;
+};
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const pick = (a) => a[Math.floor(Math.random() * a.length)];
+const uid = () => Math.random().toString(36).slice(2, 10);
+const enc = new TextEncoder();
+function clipKey(lang, text) { let h = 0x811c9dc5; for (const b of enc.encode(lang + "|" + text)) { h ^= b; h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(16).padStart(8, "0"); }
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+let C = null; // content
+const state = { kids: [], updatedAt: 0 };
+let kid = null;
+
+/* ---------------- run cancellation ---------------- */
+let runId = 0;
+class Cancelled extends Error {}
+function newRun() { runId++; Voice.stop(); return runId; }
+function check(r) { if (r !== runId) throw new Cancelled(); }
+
+/* ---------------- avatar ---------------- */
+function shade(hex, amt) {
+  const n = parseInt(hex.slice(1), 16);
+  let r = (n >> 16) + amt, g = ((n >> 8) & 255) + amt, b = (n & 255) + amt;
+  r = Math.max(0, Math.min(255, r)); g = Math.max(0, Math.min(255, g)); b = Math.max(0, Math.min(255, b));
+  return "#" + ((r << 16) | (g << 8) | b).toString(16).padStart(6, "0");
+}
+const colorHex = (id) => (C.builder.colors.find((c) => c.id === id) || C.builder.colors[1]).hex;
+const DEFAULT_AV = { type: "girl", color: "brown", skin: "#EBB98F", hat: "none", glasses: "none", shirt: "blue", name: "Lulu" };
+
+function avatarSVG(a) {
+  a = Object.assign({}, DEFAULT_AV, a || {});
+  const main = colorHex(a.color), shirt = colorHex(a.shirt);
+  const human = a.type === "girl" || a.type === "boy";
+  const face = human ? a.skin : a.type === "robot" ? shade(main, 30) : main;
+  const line = "rgba(0,0,0,.18)";
+  let back = "", head = "", front = "";
+  if (a.type === "girl") {
+    back = `<path d="M40 92 Q26 150 44 186 Q58 194 72 184 Q60 150 66 104Z M160 92 Q174 150 156 186 Q142 194 128 184 Q140 150 134 104Z" fill="${main}"/>`;
+    head = `<circle cx="100" cy="104" r="62" fill="${face}" stroke="${line}" stroke-width="2"/>`;
+    front = `<path d="M38 100 Q40 40 100 38 Q160 40 162 100 Q140 66 100 70 Q66 64 38 100Z" fill="${main}"/>
+      <circle cx="40" cy="70" r="14" fill="${main}"/><circle cx="160" cy="70" r="14" fill="${main}"/>`;
+  } else if (a.type === "boy") {
+    head = `<circle cx="100" cy="104" r="62" fill="${face}" stroke="${line}" stroke-width="2"/>
+      <circle cx="38" cy="108" r="11" fill="${face}"/><circle cx="162" cy="108" r="11" fill="${face}"/>`;
+    front = `<path d="M40 96 Q42 40 100 40 Q158 40 160 96 Q150 72 128 70 Q118 80 100 72 Q84 82 70 70 Q50 74 40 96Z" fill="${main}"/>`;
+  } else if (a.type === "cat") {
+    back = `<path d="M44 78 L52 24 L90 52Z M156 78 L148 24 L110 52Z" fill="${main}" stroke="${line}" stroke-width="2"/>
+      <path d="M54 64 L58 38 L78 54Z M146 64 L142 38 L122 54Z" fill="#F7A8C0"/>`;
+    head = `<circle cx="100" cy="106" r="62" fill="${face}" stroke="${line}" stroke-width="2"/>`;
+    front = `<g stroke="${shade(main, -70)}" stroke-width="2.5" stroke-linecap="round" opacity=".7">
+      <path d="M52 122 L28 116 M52 130 L28 134 M148 122 L172 116 M148 130 L172 134"/></g>
+      <path d="M94 118 L106 118 L100 125Z" fill="#E86A8E"/>`;
+  } else if (a.type === "bear") {
+    back = `<circle cx="50" cy="56" r="22" fill="${main}" stroke="${line}" stroke-width="2"/><circle cx="150" cy="56" r="22" fill="${main}" stroke="${line}" stroke-width="2"/>
+      <circle cx="50" cy="56" r="11" fill="${shade(main, 45)}"/><circle cx="150" cy="56" r="11" fill="${shade(main, 45)}"/>`;
+    head = `<circle cx="100" cy="106" r="62" fill="${face}" stroke="${line}" stroke-width="2"/>
+      <ellipse cx="100" cy="134" rx="30" ry="22" fill="${shade(main, 55)}"/>`;
+    front = `<ellipse cx="100" cy="120" rx="9" ry="6" fill="#3A2A22"/>`;
+  } else if (a.type === "dino") {
+    back = `<path d="M66 50 L76 22 L88 46 L100 16 L112 46 L124 22 L134 50Z" fill="${shade(main, -35)}"/>`;
+    head = `<ellipse cx="100" cy="108" rx="66" ry="60" fill="${face}" stroke="${line}" stroke-width="2"/>
+      <circle cx="70" cy="80" r="6" fill="${shade(main, 30)}"/><circle cx="132" cy="76" r="5" fill="${shade(main, 30)}"/>`;
+    front = `<circle cx="90" cy="128" r="3" fill="${shade(main, -60)}"/><circle cx="110" cy="128" r="3" fill="${shade(main, -60)}"/>`;
+  } else { // robot
+    back = `<line x1="100" y1="44" x2="100" y2="22" stroke="${shade(main, -40)}" stroke-width="5"/><circle cx="100" cy="18" r="9" fill="#FFC53D"/>`;
+    head = `<rect x="40" y="44" width="120" height="118" rx="26" fill="${face}" stroke="${shade(main, -40)}" stroke-width="3"/>
+      <rect x="54" y="66" width="92" height="78" rx="18" fill="#22313A"/>
+      <circle cx="36" cy="104" r="8" fill="${shade(main, -40)}"/><circle cx="164" cy="104" r="8" fill="${shade(main, -40)}"/>`;
+  }
+  const robot = a.type === "robot";
+  const eyeWhite = robot ? "#7FE7FF" : "#fff";
+  const eyes = robot
+    ? `<g class="eyes-open"><circle cx="80" cy="96" r="9" fill="${eyeWhite}"/><circle cx="120" cy="96" r="9" fill="${eyeWhite}"/></g>
+       <g class="eyes-happy" stroke="${eyeWhite}" stroke-width="5" fill="none" stroke-linecap="round"><path d="M70 98 Q80 86 90 98 M110 98 Q120 86 130 98"/></g>`
+    : `<g class="eyes-open"><ellipse cx="78" cy="98" rx="11" ry="13" fill="#fff"/><ellipse cx="122" cy="98" rx="11" ry="13" fill="#fff"/>
+         <circle cx="80" cy="100" r="7" fill="#2A2320"/><circle cx="124" cy="100" r="7" fill="#2A2320"/>
+         <circle cx="82" cy="97" r="2.4" fill="#fff"/><circle cx="126" cy="97" r="2.4" fill="#fff"/></g>
+       <g class="eyes-happy" stroke="#2A2320" stroke-width="5" fill="none" stroke-linecap="round"><path d="M67 100 Q78 87 89 100 M111 100 Q122 87 133 100"/></g>`;
+  const cheeks = robot ? "" : `<circle cx="64" cy="122" r="9" fill="#FF8FA3" opacity=".45"/><circle cx="136" cy="122" r="9" fill="#FF8FA3" opacity=".45"/>`;
+  const mouthY = robot ? 128 : a.type === "bear" ? 138 : 136;
+  const mouthCol = robot ? "#7FE7FF" : "#5A2230";
+  const mouth = `<g class="mouth">
+      <path class="mouth-closed" d="M86 ${mouthY - 2} Q100 ${mouthY + 10} 114 ${mouthY - 2}" stroke="${mouthCol}" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse class="mouth-open" cx="100" cy="${mouthY + 2}" rx="12" ry="0" fill="${robot ? "#7FE7FF" : "#7A2638"}"/>
+    </g>`;
+  let glasses = "";
+  const gy = robot ? 96 : 98;
+  if (a.glasses === "round") glasses = `<g fill="none" stroke="#2B2B2E" stroke-width="4"><circle cx="78" cy="${gy}" r="17"/><circle cx="122" cy="${gy}" r="17"/><path d="M95 ${gy} Q100 ${gy - 5} 105 ${gy}"/></g>`;
+  if (a.glasses === "sun") glasses = `<g><rect x="58" y="${gy - 12}" width="38" height="24" rx="10" fill="#1B1B1F"/><rect x="104" y="${gy - 12}" width="38" height="24" rx="10" fill="#1B1B1F"/><path d="M96 ${gy - 4} L104 ${gy - 4}" stroke="#1B1B1F" stroke-width="4"/><path d="M64 ${gy - 6} L74 ${gy - 6}" stroke="#fff" stroke-width="3" opacity=".5"/></g>`;
+  if (a.glasses === "star") {
+    const star = (cx, cy) => { let p = ""; for (let i = 0; i < 10; i++) { const r = i % 2 ? 9 : 21, t = Math.PI / 5 * i - Math.PI / 2; p += `${i ? "L" : "M"}${(cx + r * Math.cos(t)).toFixed(1)} ${(cy + r * Math.sin(t)).toFixed(1)}`; } return p + "Z"; };
+    glasses = `<g fill="none" stroke="#E93D82" stroke-width="4" stroke-linejoin="round"><path d="${star(78, gy)}"/><path d="${star(122, gy)}"/><path d="M97 ${gy} L103 ${gy}"/></g>`;
+  }
+  let hat = "";
+  const ht = a.type === "robot" ? 46 : 46;
+  if (a.hat === "cap") hat = `<path d="M50 ${ht + 10} Q52 ${ht - 34} 100 ${ht - 36} Q148 ${ht - 34} 150 ${ht + 10}Z" fill="#E5484D"/><path d="M100 ${ht + 6} L174 ${ht + 10} Q176 ${ht + 18} 150 ${ht + 16} L100 ${ht + 14}Z" fill="#B8323A"/><circle cx="100" cy="${ht - 36}" r="5" fill="#B8323A"/>`;
+  if (a.hat === "crown") hat = `<path d="M62 ${ht + 4} L58 ${ht - 34} L80 ${ht - 14} L100 ${ht - 42} L120 ${ht - 14} L142 ${ht - 34} L138 ${ht + 4}Z" fill="#FFC53D" stroke="#C8901A" stroke-width="3" stroke-linejoin="round"/><circle cx="100" cy="${ht - 10}" r="6" fill="#E5484D"/><circle cx="76" cy="${ht - 6}" r="4" fill="#3B82F6"/><circle cx="124" cy="${ht - 6}" r="4" fill="#30A46C"/>`;
+  if (a.hat === "bow") hat = `<g transform="translate(138 ${ht + 2}) rotate(18)"><path d="M0 0 L-26 -16 L-26 16Z M0 0 L26 -16 L26 16Z" fill="#E93D82" stroke="#B02C63" stroke-width="2" stroke-linejoin="round"/><circle r="7" fill="#B02C63"/></g>`;
+  if (a.hat === "party") hat = `<path d="M74 ${ht + 6} L100 ${ht - 58} L126 ${ht + 6}Z" fill="#8E4EC6"/><path d="M84 ${ht - 18} L116 ${ht - 18} M90 ${ht - 34} L110 ${ht - 34}" stroke="#FFC53D" stroke-width="5"/><circle cx="100" cy="${ht - 60}" r="8" fill="#FFC53D"/>`;
+  if (a.hat === "wizard") hat = `<path d="M50 ${ht + 8} L150 ${ht + 8} L130 ${ht} L104 ${ht - 70} Q96 ${ht - 40} 72 ${ht}Z" fill="#3B4FB8"/><path d="M44 ${ht + 10} Q100 ${ht - 4} 156 ${ht + 10} Q100 ${ht + 20} 44 ${ht + 10}Z" fill="#2C3A8C"/><path d="M98 ${ht - 26} l3 7 7 1 -5 5 1 7 -6 -3 -6 3 1 -7 -5 -5 7 -1Z" fill="#FFC53D"/>`;
+  if (a.hat === "flower") hat = `<g transform="translate(140 ${ht + 4})">${[0, 72, 144, 216, 288].map((d) => `<ellipse rx="9" ry="15" transform="rotate(${d}) translate(0 -13)" fill="#FFFFFF" stroke="#E2E2E2"/>`).join("")}<circle r="9" fill="#FFC53D"/></g>`;
+  const body = `<path d="M44 240 Q46 176 100 172 Q154 176 156 240Z" fill="${shirt}" stroke="${line}" stroke-width="2"/>
+    <path d="M86 174 Q100 188 114 174" fill="none" stroke="${shade(shirt, -40)}" stroke-width="4" stroke-linecap="round"/>`;
+  return `<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${a.name || "המורה"}">
+    <g class="av">${body}${back}${head}${front}${eyes}${cheeks}${mouth}${glasses}${hat}</g></svg>`;
+}
+let activeAvatar = null;
+function mountAvatar(slotId, a) {
+  const slot = $(slotId);
+  slot.innerHTML = avatarSVG(a);
+  activeAvatar = slot.querySelector("svg");
+  return activeAvatar;
+}
+function setMouth(amp) {
+  if (!activeAvatar) return;
+  const open = activeAvatar.querySelector(".mouth-open"), closed = activeAvatar.querySelector(".mouth-closed");
+  if (!open) return;
+  const ry = Math.max(0, Math.min(1, amp)) * 13;
+  open.setAttribute("ry", ry.toFixed(1));
+  closed.style.opacity = ry > 1.5 ? 0 : 1;
+}
+function mood(name) {
+  if (!activeAvatar) return;
+  const g = activeAvatar.querySelector(".av");
+  g.classList.remove("happy"); void g.getBBox; // restart
+  if (name === "happy") { requestAnimationFrame(() => g.classList.add("happy")); setTimeout(() => g.classList.remove("happy"), 1600); }
+}
+
+/* ---------------- voice ---------------- */
+const Voice = {
+  ctx: null, analyser: null, index: null, packs: {}, buffers: new Map(), src: null, rafId: 0,
+  browserVoices: [], heVoice: null, gen: 0,
+  async loadIndex() {
+    try { const r = await fetch("audio/index.json", { cache: "no-cache" }); if (r.ok) this.index = await r.json(); } catch (e) { this.index = null; }
+  },
+  unlock() {
+    if (!this.ctx) {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (AC) {
+        this.ctx = new AC();
+        this.analyser = this.ctx.createAnalyser();
+        this.analyser.fftSize = 512;
+        this.analyser.connect(this.ctx.destination);
+      }
+    }
+    if (this.ctx && this.ctx.state === "suspended") this.ctx.resume();
+    this.loadBrowserVoices();
+  },
+  loadBrowserVoices() {
+    if (!("speechSynthesis" in window)) return;
+    const pickVoices = () => {
+      this.browserVoices = speechSynthesis.getVoices();
+      this.heVoice = this.browserVoices.find((v) => /^(he|iw)/i.test(v.lang)) || null;
+    };
+    pickVoices();
+    speechSynthesis.onvoiceschanged = pickVoices;
+  },
+  clipCount() { return this.index ? Object.keys(this.index.clips.f || {}).length + Object.keys(this.index.clips.m || {}).length : 0; },
+  has(voice, lang, text) { return !!(this.index && this.index.clips[voice] && this.index.clips[voice][clipKey(lang, text)]); },
+  async buffer(voice, lang, text) {
+    const k = voice + clipKey(lang, text);
+    if (this.buffers.has(k)) return this.buffers.get(k);
+    const ent = this.index.clips[voice][clipKey(lang, text)];
+    if (!this.packs[ent[0]]) this.packs[ent[0]] = fetch("audio/" + ent[0]).then((r) => { if (!r.ok) throw new Error("pack"); return r.arrayBuffer(); });
+    const pack = await this.packs[ent[0]];
+    const buf = await this.ctx.decodeAudioData(pack.slice(ent[1], ent[1] + ent[2]));
+    this.buffers.set(k, buf);
+    return buf;
+  },
+  prefetch(voice, clips) {
+    if (!this.index || !this.ctx) return;
+    for (const c of clips) { const [lang, text] = resolveClip(c, voice); if (lang && this.has(voice, lang, text)) this.buffer(voice, lang, text).catch(() => {}); }
+  },
+  stop() {
+    this.gen++;
+    if (this.src) { try { this.src.stop(); } catch (e) {} this.src = null; }
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
+    cancelAnimationFrame(this.rafId); setMouth(0);
+  },
+  lipLoop() {
+    const data = new Uint8Array(this.analyser.fftSize);
+    const tick = () => {
+      this.analyser.getByteTimeDomainData(data);
+      let sum = 0; for (const v of data) { const d = (v - 128) / 128; sum += d * d; }
+      setMouth(Math.min(1, Math.sqrt(sum / data.length) * 5));
+      this.rafId = requestAnimationFrame(tick);
+    };
+    tick();
+  },
+  async playClip(voice, lang, text) {
+    const g = this.gen;
+    const buf = await this.buffer(voice, lang, text);
+    if (g !== this.gen) return;
+    await new Promise((res) => {
+      const s = this.ctx.createBufferSource();
+      s.buffer = buf; s.connect(this.analyser);
+      s.onended = () => { cancelAnimationFrame(this.rafId); setMouth(0); res(); };
+      this.src = s; s.start(); this.lipLoop();
+    });
+  },
+  speakBrowser(voice, lang, text, slow) {
+    const g = this.gen;
+    return new Promise((res) => {
+      if (!("speechSynthesis" in window)) return res(false);
+      let v = null;
+      if (lang === "he") v = this.heVoice;
+      else {
+        const en = this.browserVoices.filter((x) => /^en/i.test(x.lang));
+        const fem = /female|zira|aria|jenny|samantha|susan|hazel|libby|sonia|ava|emma|michelle|google us english/i;
+        const mal = /male|david|guy|mark|george|ryan|daniel|andrew|christopher|eric/i;
+        v = en.find((x) => (voice === "f" ? fem : mal).test(x.name) && !(voice === "f" && /\bmale\b/i.test(x.name))) || en.find((x) => /en-US/i.test(x.lang)) || en[0] || null;
+      }
+      if (lang === "he" && !v) return res(false);
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = lang === "he" ? "he-IL" : "en-US";
+      if (v) u.voice = v;
+      u.rate = slow ? 0.8 : 0.92; u.pitch = voice === "f" ? 1.15 : 0.95;
+      let t = 0, done = false;
+      const fake = () => { t += 0.35; setMouth(0.25 + 0.35 * Math.abs(Math.sin(t))); this.rafId = requestAnimationFrame(fake); };
+      const finish = () => { if (done) return; done = true; cancelAnimationFrame(this.rafId); setMouth(0); res(true); };
+      u.onstart = () => { if (g === this.gen) fake(); };
+      u.onend = finish; u.onerror = finish;
+      speechSynthesis.speak(u);
+      setTimeout(finish, 1500 + text.length * 140); // safety net for engines that never fire onend
+    });
+  },
+};
+function resolveClip(c, voice) {
+  if (c.tts) return [c.lang, c.tts, true];
+  if (voice === "f" && c.heF) return ["he", c.heF];
+  if (voice === "m" && c.heM) return ["he", c.heM];
+  if (c.he) return ["he", c.he];
+  if (c.heF || c.heM) return ["he", c.heF || c.heM];
+  if (c.en) return ["en", c.en];
+  return [null, null];
+}
+/* speak a sequence of clips; bubble shows the current line */
+async function say(r, clips, bubbleId) {
+  if (!Array.isArray(clips)) clips = [clips];
+  const voice = kidVoice();
+  const bubble = bubbleId ? $(bubbleId) : null;
+  Voice.prefetch(voice, clips);
+  for (const c of clips) {
+    check(r);
+    const [lang, text] = resolveClip(c, voice);
+    if (!lang || !text) continue;
+    if (bubble) { bubble.textContent = text; bubble.dir = lang === "he" ? "rtl" : "ltr"; bubble.classList.remove("read-me"); }
+    let ok = false;
+    if (Voice.ctx && Voice.has(voice, lang, text)) {
+      try { await Voice.playClip(voice, lang, text); ok = true; } catch (e) { ok = false; }
+    }
+    check(r);
+    if (!ok) ok = await Voice.speakBrowser(voice, lang, text, kid && kid.level === "tiny");
+    check(r);
+    if (!ok) { // no Hebrew voice on this device: show the line for a grown-up to read
+      if (bubble) bubble.classList.add("read-me");
+      await sleep(1400 + text.length * 70);
+      check(r);
+    }
+    await sleep(180);
+  }
+}
+function kidVoice() {
+  const a = (kid && kid.avatar) || builderAv || DEFAULT_AV;
+  const t = C.builder.types.find((x) => x.id === a.type);
+  return (t && t.voice) || "f";
+}
+
+/* ---------------- storage ---------------- */
+const LS_KEY = "et-state-v1";
+let db = null, dbPath = null, saveTimer = 0, saving = Promise.resolve();
+function loadLocal() {
+  try { const s = JSON.parse(localStorage.getItem(LS_KEY) || "null"); if (s && Array.isArray(s.kids)) Object.assign(state, s); } catch (e) {}
+}
+function save() {
+  state.updatedAt = Date.now();
+  try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch (e) {}
+  if (db && dbPath) {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => { saving = saving.then(() => db.doc(dbPath).set(JSON.parse(JSON.stringify(state)))).catch(() => {}); }, 800);
+  }
+  renderChip();
+}
+async function connectCloud() {
+  if (!window.claude || !window.claude.use) return;
+  try {
+    const [d, u] = await Promise.all([window.claude.use("db"), window.claude.use("user")]);
+    if (!d || !u) return;
+    const id = await u.id();
+    if (!id) return;
+    db = d; dbPath = "data/users/" + id + "/state";
+    const snap = await db.doc(dbPath).get();
+    if (snap.exists) {
+      const remote = snap.data();
+      if (remote && Array.isArray(remote.kids) && (remote.updatedAt || 0) > (state.updatedAt || 0)) {
+        state.kids = remote.kids; state.updatedAt = remote.updatedAt;
+        try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch (e) {}
+        if (!$("s-home").hidden) showHome();
+      }
+    } else if (state.kids.length) {
+      db.doc(dbPath).set(JSON.parse(JSON.stringify(state))).catch(() => {});
+    }
+  } catch (e) { db = null; }
+}
+
+/* ---------------- navigation ---------------- */
+const SCREENS = ["s-start", "s-home", "s-parent", "s-builder", "s-map", "s-play", "s-chat"];
+function show(id) {
+  for (const s of SCREENS) $(s).hidden = s !== id;
+  $("bar").hidden = id === "s-start";
+  $("mapBtn").hidden = !kid || id === "s-map" || id === "s-home" || id === "s-parent" || id === "s-builder";
+  window.scrollTo(0, 0);
+  renderChip();
+}
+function renderChip() {
+  const on = !!kid && ["s-map", "s-play", "s-chat"].some((s) => !$(s).hidden);
+  $("kidChip").hidden = !on;
+  if (!on) return;
+  $("kidChipFace").innerHTML = avatarSVG(kid.avatar);
+  $("kidChipName").textContent = kid.name;
+  $("kidChipStars").textContent = "⭐ " + totalStars(kid);
+}
+const totalStars = (k) => Object.values(k.stars || {}).reduce((a, b) => a + b, 0) + Object.keys(k.talks || {}).length;
+
+/* ---------------- home ---------------- */
+function showHome() {
+  newRun(); kid = null;
+  show("s-home");
+  const g = $("kidsGrid"); g.innerHTML = "";
+  for (const k of state.kids) {
+    const face = el("span", { class: "face" }); face.innerHTML = avatarSVG(k.avatar);
+    g.append(el("button", { class: "tile", onclick: () => openKid(k.id) }, face,
+      el("span", { class: "name", text: k.name }), el("span", { class: "sub", text: "⭐ " + totalStars(k) })));
+  }
+  g.append(el("button", { class: "tile add", onclick: () => openParent("add") },
+    el("span", { class: "plus", text: "+" }), el("span", { text: state.kids.length ? "ילד חדש (להורים)" : "הורים: הוסיפו ילד כדי להתחיל" })));
+  if (state.kids.length) { const r = newRun(); activeAvatar = null; say(r, C.phrases.welcome).catch(() => {}); }
+}
+function openKid(id) {
+  kid = state.kids.find((k) => k.id === id);
+  if (!kid) return showHome();
+  if (!kid.avatar) return startBuilder();
+  showMap();
+}
+
+/* ---------------- parent ---------------- */
+let gateAnswer = 0, parentOpen = false, parentIntent = null;
+function openParent(intent) {
+  newRun(); parentIntent = intent || null;
+  show("s-parent");
+  if (parentOpen) return renderParent();
+  const a = 6 + Math.floor(Math.random() * 7), b = 5 + Math.floor(Math.random() * 8);
+  gateAnswer = a + b; $("gateQ").textContent = `${a} + ${b} = ?`;
+  $("gateA").value = ""; $("gateMsg").textContent = "";
+  $("gate").hidden = false; $("parentPanel").hidden = true;
+  setTimeout(() => $("gateA").focus(), 50);
+}
+$("gateGo").onclick = () => {
+  if (parseInt($("gateA").value, 10) === gateAnswer) { parentOpen = true; renderParent(); }
+  else $("gateMsg").textContent = "התשובה לא נכונה. נסו שוב.";
+};
+$("gateA").addEventListener("keydown", (e) => { if (e.key === "Enter") $("gateGo").click(); });
+function levelFor(age) { return age < 5 ? "tiny" : "starter"; }
+function renderParent() {
+  $("gate").hidden = true; $("parentPanel").hidden = false;
+  const rows = $("kidRows"); rows.innerHTML = "";
+  if (!state.kids.length) rows.append(el("p", { class: "note", text: "עוד אין ילדים. הוסיפו את הראשון למטה." }));
+  for (const k of state.kids) {
+    const mini = el("span", { class: "mini" }); mini.innerHTML = avatarSVG(k.avatar);
+    const lvl = el("select", { class: "field", id: "lvl-" + k.id, "aria-label": "רמה של " + k.name },
+      ...C.levels.map((l, i) => el("option", { value: l.id, text: `${i + 1}. ${l.title}${levelHasLessons(l.id) ? "" : " (בקרוב)"}`, selected: k.level === l.id, disabled: !levelHasLessons(l.id) })));
+    lvl.onchange = () => { k.level = lvl.value; save(); renderParent(); };
+    const up = nextLevel(k);
+    const upBox = up ? el("div", { class: "confirm" }, el("span", { text: `🏆 ${k.name} סיים את כל השיעורים ברמה. לעבור לרמת ${levelInfo(up).title}?` }),
+      el("button", { class: "btn small", onclick: () => { k.level = up; save(); renderParent(); }, text: "כן, לעלות רמה" })) : null;
+    const confirmBox = el("div", { class: "confirm", hidden: true },
+      el("span", { text: `למחוק את ${k.name} ואת כל ההתקדמות?` }),
+      el("button", { class: "btn small", onclick: () => { state.kids = state.kids.filter((x) => x.id !== k.id); save(); renderParent(); }, text: "כן, למחוק" }),
+      el("button", { class: "btn small", onclick: () => { confirmBox.hidden = true; }, text: "ביטול" }));
+    const actions = el("div", { class: "row" }, lvl,
+      el("button", { class: "btn small", onclick: () => { if (k.avatar) runPlacement(k); else { kid = k; startBuilder(); } }, text: "📝 מבחן שיבוץ" }),
+      el("button", { class: "btn small", onclick: () => { kid = k; startBuilder(); }, text: "🎨 מורה חדש" }),
+      el("button", { class: "btn small", onclick: () => { confirmBox.hidden = false; }, text: "🗑️" }));
+    rows.append(el("div", { class: "kid-row" }, mini,
+      el("div", {}, el("strong", { text: k.name }), el("div", { class: "note", text: `גיל ${k.age} · רמת ${levelInfo(k.level).title} · ⭐ ${totalStars(k)} · ${(k.words || []).length} מילים` })),
+      actions), confirmBox, upBox);
+  }
+  const n = Voice.clipCount();
+  $("voiceStatus").className = "status " + (n ? "ok" : "warn");
+  $("voiceStatus").textContent = n ? `קול ElevenLabs פעיל: ${n} הקלטות.` : "הקלטות ElevenLabs עוד לא הועלו. בינתיים משתמשים בקול של הדפדפן.";
+  $("heVoiceStatus").className = "status " + (Voice.heVoice ? "ok" : "warn");
+  $("heVoiceStatus").textContent = Voice.heVoice ? `קול עברי בדפדפן: ${Voice.heVoice.name}.` : "אין קול עברי בדפדפן הזה. משפטים בעברית בלי הקלטה יוצגו כטקסט להורה. במחשב עדיף Edge.";
+  $("syncStatus").textContent = db ? "מחובר לחשבון: ההתקדמות נשמרת גם בענן." : "לא מחובר לחשבון: ההתקדמות נשמרת רק במכשיר הזה.";
+  if (parentIntent === "add") { parentIntent = null; setTimeout(() => $("newKidName").focus(), 50); }
+}
+$("addKidForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = $("newKidName").value.trim(), age = parseFloat($("newKidAge").value);
+  if (!name || !(age > 0)) return;
+  const k = { id: uid(), name, age, level: levelFor(age), avatar: null, stars: {}, talks: {}, words: [], created: Date.now() };
+  state.kids.push(k); save();
+  $("newKidName").value = ""; $("newKidAge").value = "";
+  kid = k; startBuilder();
+});
+$("testF").onclick = () => { Voice.unlock(); const r = newRun(); activeAvatar = null; const saved = kid; kid = { avatar: { type: "girl" } }; say(r, [C.phrases.hello, C.praise[0]]).catch(() => {}).finally(() => { kid = saved; }); };
+$("testM").onclick = () => { Voice.unlock(); const r = newRun(); activeAvatar = null; const saved = kid; kid = { avatar: { type: "boy" } }; say(r, [C.phrases.hello, C.praise[0]]).catch(() => {}).finally(() => { kid = saved; }); };
+$("exportBtn").onclick = async () => {
+  const code = btoa(unescape(encodeURIComponent(JSON.stringify(state))));
+  $("backupBox").value = code;
+  try { await navigator.clipboard.writeText(code); $("backupMsg").textContent = "הקוד הועתק. הדביקו אותו במכשיר השני ולחצו על שחזור."; }
+  catch (e) { $("backupBox").select(); $("backupMsg").textContent = "הקוד מסומן בתיבה. העתיקו אותו ידנית."; }
+};
+$("importBtn").onclick = () => {
+  try {
+    const s = JSON.parse(decodeURIComponent(escape(atob($("backupBox").value.trim()))));
+    if (!s || !Array.isArray(s.kids)) throw new Error();
+    state.kids = s.kids; save(); renderParent();
+    $("backupMsg").textContent = `שוחזרו ${s.kids.length} ילדים.`;
+  } catch (e) { $("backupMsg").textContent = "הקוד לא תקין. ודאו שהעתקתם את כולו."; }
+};
+
+/* ---------------- builder ---------------- */
+let builderAv = null, bStep = 0;
+const B_STEPS = ["type", "color", "hat", "glasses", "shirt", "name"];
+function startBuilder() {
+  builderAv = Object.assign({}, DEFAULT_AV, kid.avatar || {});
+  bStep = 0; show("s-builder"); renderBuilder(true);
+}
+function renderBuilder(intro) {
+  const r = newRun();
+  const step = B_STEPS[bStep];
+  mountAvatar("bAvatar", builderAv);
+  $("bDots").innerHTML = B_STEPS.map((_, i) => `<i class="${i <= bStep ? "on" : ""}"></i>`).join("");
+  $("bBack").disabled = bStep === 0;
+  $("bNext").textContent = bStep === B_STEPS.length - 1 ? "סיימנו! ✓" : "הלאה ←";
+  const body = $("bBody"); body.innerHTML = "";
+  const choose = (field, item, clip) => {
+    builderAv[field] = item.id;
+    mountAvatar("bAvatar", builderAv);
+    body.querySelectorAll(`[data-f="${field}"]`).forEach((b) => b.classList.toggle("sel", b.dataset.v === item.id));
+    const rr = newRun(); say(rr, clip || item, "bBubble").catch(() => {});
+  };
+  const optGrid = (field, items, render) => el("div", { class: "opts" }, ...items.map((it) =>
+    el("button", { class: "opt" + (builderAv[field] === it.id ? " sel" : ""), "data-f": field, "data-v": it.id, onclick: () => choose(field, it) }, ...render(it))));
+  if (step === "type") body.append(optGrid("type", C.builder.types, (t) => [el("span", { class: "ic", text: t.emoji }), el("span", { class: "lbl", text: t.show })]));
+  if (step === "color" || step === "shirt") {
+    const field = step === "color" ? "color" : "shirt";
+    body.append(optGrid(field, C.builder.colors, (c) => [el("span", { class: "sw", style: `background:${c.hex}` }), el("span", { class: "lbl", text: c.show })]));
+    if (step === "color" && (builderAv.type === "girl" || builderAv.type === "boy")) {
+      body.append(el("div", { class: "skins" }, ...C.builder.skins.map((s) => el("button", { class: builderAv.skin === s ? "sel" : "", style: `background:${s}`, "aria-label": "צבע עור", onclick: (e) => {
+        builderAv.skin = s; mountAvatar("bAvatar", builderAv); body.querySelectorAll(".skins button").forEach((b) => b.classList.toggle("sel", b === e.currentTarget));
+      } }))));
+    }
+  }
+  if (step === "hat") body.append(optGrid("hat", C.builder.hats, (h) => [el("span", { class: "ic", text: h.emoji }), el("span", { class: "lbl", text: h.show })]));
+  if (step === "glasses") body.append(optGrid("glasses", C.builder.glasses, (g) => [el("span", { class: "ic", text: g.emoji }), el("span", { class: "lbl", text: g.show })]));
+  if (step === "name") {
+    body.append(el("div", { class: "opts" }, ...C.builder.names.map((n) =>
+      el("button", { class: "opt" + (builderAv.name === n.id ? " sel" : ""), "data-f": "name", "data-v": n.id, onclick: () => { $("teacherName").value = n.id; choose("name", n); } },
+        el("span", { class: "lbl", style: "font-size:22px", text: n.id })))));
+    const input = el("input", { class: "field", id: "teacherName", maxlength: "14", value: builderAv.name, "aria-label": "שם המורה", dir: "auto" });
+    input.addEventListener("change", () => {
+      const v = input.value.trim(); if (!v) return;
+      builderAv.name = v;
+      body.querySelectorAll('[data-f="name"]').forEach((b) => b.classList.toggle("sel", b.dataset.v === v));
+      const preset = C.builder.names.find((n) => n.id === v);
+      const rr = newRun(); say(rr, preset ? preset : [C.phrases.myNameIs, { tts: v, lang: "en" }], "bBubble").catch(() => {});
+    });
+    body.append(el("div", { class: "name-row" }, input));
+  }
+  const clips = intro ? [C.builder.intro, C.builder.steps[step]] : [C.builder.steps[step]];
+  say(r, clips, "bBubble").catch(() => {});
+}
+$("bBack").onclick = () => { if (bStep > 0) { bStep--; renderBuilder(); } };
+$("bNext").onclick = async () => {
+  if (B_STEPS[bStep] === "name") { const v = ($("teacherName").value || "").trim(); if (v) builderAv.name = v; }
+  if (bStep < B_STEPS.length - 1) { bStep++; return renderBuilder(); }
+  kid.avatar = Object.assign({}, builderAv); builderAv = null; save();
+  const r = newRun();
+  show("s-map"); renderMap();
+  mood("happy"); confetti();
+  const preset = C.builder.names.find((n) => n.id === kid.avatar.name);
+  try { await say(r, [C.builder.done, preset ? preset : { tts: kid.avatar.name, lang: "en" }, C.phrases.niceToMeet], "mBubble"); await say(r, C.phrases.chooseLesson, "mBubble"); } catch (e) {}
+};
+
+/* ---------------- map ---------------- */
+function lessonsFor(k) { return C.lessons.filter((l) => l.level === k.level); }
+function showMap() {
+  const r = newRun(); show("s-map"); renderMap();
+  say(r, [C.phrases.hello, C.phrases.chooseLesson], "mBubble").catch(() => {});
+}
+function starsRow(n) { return el("span", { class: "stars-row" }, ...[1, 2, 3].map((i) => el("span", { class: i <= n ? "" : "off", text: "★" }))); }
+function renderMap() {
+  mountAvatar("mAvatar", kid.avatar);
+  $("mTitle").textContent = `השיעורים של ${kid.name}`;
+  $("mLevel").textContent = "רמה: " + levelInfo(kid.level).title;
+  $("mBubble").textContent = "";
+  const up = nextLevel(kid);
+  $("levelUp").hidden = !up;
+  if (up) $("levelUpText").textContent = `סיימתם את כל השיעורים ברמה הזאת! הורים: אפשר לעבור לרמת ${levelInfo(up).title} באזור ההורים.`;
+  const talk = talkLink("tile talk-tile");
+  $("talkGrid").innerHTML = "";
+  if (talk) { talk.textContent = ""; talk.append(el("span", { class: "ic", text: "🎤" }), el("span", { class: "name", text: "לדבר עם המורה" }), el("span", { class: "sub", text: "שיחה קולית אמיתית" })); $("talkGrid").append(talk); }
+  $("talkEntry").hidden = !talk;
+  const lessons = lessonsFor(kid);
+  const next = lessons.find((l) => !(kid.stars || {})[l.id]);
+  const lg = $("lessonGrid"); lg.innerHTML = "";
+  for (const l of lessons) {
+    const st = (kid.stars || {})[l.id] || 0;
+    lg.append(el("button", { class: "tile", onclick: () => runLesson(l) },
+      l === next ? el("span", { class: "badge", text: "הבא" }) : null,
+      el("span", { class: "ic", text: l.icon }), el("span", { class: "name", text: l.title }), starsRow(st)));
+  }
+  const dg = $("dialogGrid"); dg.innerHTML = "";
+  for (const d of C.dialogs) {
+    dg.append(el("button", { class: "tile", onclick: () => runDialog(d) },
+      el("span", { class: "ic", text: d.icon }), el("span", { class: "name", text: d.title }),
+      el("span", { class: "sub", text: (kid.talks || {})[d.id] ? "⭐ דיברנו!" : "שיחה חדשה" })));
+  }
+  $("chatEntry").hidden = !Chat.available;
+}
+
+/* ---------------- lesson ---------------- */
+const levelInfo = (id) => C.levels.find((l) => l.id === id) || C.levels[0];
+const optionsCount = () => levelInfo(kid.level).options || 3;
+function waitTap(btns) { // resolves with the index of the pressed button
+  return new Promise((res) => btns.forEach((b, i) => b.addEventListener("click", () => res(i), { once: true })));
+}
+function setControls(...btns) { const c = $("pControls"); c.innerHTML = ""; c.append(...btns.filter(Boolean)); return btns; }
+const wordText = (w) => w.show || w.en.replace(/[.!]$/, "");
+function boardShow(w, lesson) {
+  const b = $("pBoard"); b.innerHTML = '<span class="chalk-ledge"></span>';
+  if (w.count) b.append(el("div", { class: "pic count", text: w.emoji.repeat(w.count) }));
+  else if (w.emoji) b.append(el("div", { class: "pic", text: w.emoji }));
+  const text = wordText(w);
+  b.append(el("div", { class: "word" + (text.length > 12 ? " small" : ""), text }));
+  const he = w.he || (kidVoice() === "m" ? w.heM : w.heF) || w.heF;
+  if (he && !lesson.letters) b.append(el("div", { class: "tr", text: he }));
+}
+function boardPic(pic, label) {
+  const b = $("pBoard"); b.innerHTML = '<span class="chalk-ledge"></span>';
+  if (pic) b.append(el("div", { class: "pic" + ([...pic].length > 2 ? " count" : ""), text: pic }));
+  if (label) b.append(el("div", { class: "word small", text: label }));
+}
+function boardSentence(text, tr, hint) {
+  const b = $("pBoard"); b.innerHTML = '<span class="chalk-ledge"></span>';
+  b.append(el("div", { class: "word small sentence", text }));
+  if (hint) b.append(el("div", { class: "hint-chip", text: hint }));
+  if (tr) b.append(el("div", { class: "tr", text: tr }));
+}
+function dots(n, i) { $("pDots").innerHTML = Array.from({ length: n }, (_, j) => `<i class="${j < i ? "on" : ""}"></i>`).join(""); }
+function choiceCard(w, lesson) {
+  const kids = [];
+  if (lesson && lesson.letters) kids.push(el("span", { class: "letter", text: w.show.split(" ")[0] }));
+  else if (w.count && kid.level === "tiny") kids.push(el("span", { class: "ic", style: "font-size:30px", text: w.emoji.repeat(w.count) }));
+  else if (w.emoji && !w.count) kids.push(el("span", { class: "ic", text: w.emoji }));
+  if (!(lesson && lesson.letters) && (kid.level !== "tiny" || !w.emoji || w.count)) kids.push(el("span", { class: "lbl", text: wordText(w) }));
+  return el("button", { class: "choice" }, ...kids);
+}
+const textCard = (t) => el("button", { class: "choice text-choice" }, el("span", { class: "lbl", text: t }));
+
+/* One multiple-choice round with hints. Returns the number of wrong taps. */
+async function choiceRound(r, { cards, correct, prompt, again, onRight, retry, cols }) {
+  $("pChoices").style.setProperty("--cols", cols || (cards.length === 3 ? 3 : 2));
+  $("pChoices").innerHTML = ""; $("pChoices").append(...cards);
+  const [againBtn] = setControls(el("button", { class: "btn", text: "🔊 שוב" }));
+  againBtn.onclick = () => { say(runId, again || prompt, "pBubble").catch(() => {}); };
+  await say(r, prompt, "pBubble");
+  let wrong = 0;
+  for (;;) {
+    const k = await waitTap(cards); check(r);
+    if (k === correct) {
+      cards[k].classList.add("right"); cards.forEach((c) => (c.disabled = true));
+      mood("happy"); confetti(true);
+      await say(r, onRight, "pBubble");
+      break;
+    }
+    wrong++;
+    cards[k].classList.add("wrong"); cards[k].disabled = true;
+    if (wrong >= 2 || cards.length === 2) {
+      cards[correct].classList.add("hint");
+      await say(r, [C.phrases.hereItIs].concat(again || []), "pBubble");
+    } else await say(r, retry, "pBubble");
+  }
+  setControls(); await sleep(350);
+  return wrong;
+}
+/* One question, one try, no hints (placement test). Returns true when right. */
+async function choiceOnce(r, { cards, correct, prompt, after }) {
+  $("pChoices").style.setProperty("--cols", cards.length === 3 ? 3 : 2);
+  $("pChoices").innerHTML = ""; $("pChoices").append(...cards);
+  setControls();
+  await say(r, prompt, "pBubble");
+  const k = await waitTap(cards); check(r);
+  cards.forEach((c) => (c.disabled = true));
+  cards[correct].classList.add("right");
+  if (k !== correct) cards[k].classList.add("wrong");
+  else mood("happy");
+  await say(r, after || [], "pBubble");
+  await sleep(500);
+  return k === correct;
+}
+
+function pickRound(r, lesson, target) {
+  const words = lesson.words.filter((w) => w.emoji || w.count);
+  const n = Math.min(optionsCount(), words.length);
+  const opts = shuffle([target, ...shuffle(words.filter((w) => w !== target)).slice(0, n - 1)]);
+  boardPic("❓", "");
+  return choiceRound(r, {
+    cards: opts.map((w) => choiceCard(w, lesson)), correct: opts.indexOf(target),
+    prompt: [C.phrases.where, { en: target.en }], again: [{ en: target.en }],
+    onRight: [pick(C.praise), { en: target.en }], retry: [pick(C.tryAgain), C.phrases.where, { en: target.en }],
+  }).then((w) => { boardShow(target, lesson); return w; });
+}
+function listenRound(r, lesson, target, first) {
+  const others = shuffle(lesson.words.filter((w) => w !== target && wordText(w) !== wordText(target))).slice(0, Math.min(3, optionsCount() - 1));
+  const opts = shuffle([target, ...others]);
+  boardPic("👂", "");
+  return choiceRound(r, {
+    cards: opts.map((w) => textCard(wordText(w))), correct: opts.indexOf(target),
+    prompt: (first ? [C.phrases.listenPick] : []).concat([{ en: target.en }]), again: [{ en: target.en }],
+    onRight: [pick(C.praise), { en: target.en }], retry: [pick(C.tryAgain), { en: target.en }],
+  });
+}
+async function fillRound(r, ex, first) {
+  boardSentence(ex.q.replace("___", " ____ "), ex.tr, ex.hint);
+  const opts = shuffle(ex.opts);
+  const w = await choiceRound(r, {
+    cards: opts.map((o) => textCard(o)), correct: opts.indexOf(ex.a),
+    prompt: first ? [C.phrases.fillIt] : [], again: [],
+    onRight: [], retry: [pick(C.tryAgain)],
+  });
+  boardSentence(ex.full.en, ex.tr);
+  await say(r, [pick(C.praise), ex.full], "pBubble");
+  return w;
+}
+async function orderRound(r, ex, first) {
+  const need = ex.words.slice();
+  const built = [];
+  const b = $("pBoard"); b.innerHTML = '<span class="chalk-ledge"></span>';
+  const line = el("div", { class: "word small sentence build" });
+  b.append(line, el("div", { class: "tr", text: ex.tr }));
+  const renderLine = () => { line.textContent = built.length ? built.join(" ") : "…"; };
+  renderLine();
+  const chips = shuffle(ex.words.map((t, i) => ({ t, i })));
+  const cards = chips.map((c) => textCard(c.t));
+  $("pChoices").style.setProperty("--cols", 3);
+  $("pChoices").innerHTML = ""; $("pChoices").append(...cards);
+  const [againBtn] = setControls(el("button", { class: "btn", text: "🔊 שוב" }));
+  againBtn.onclick = () => { say(runId, [ex.full], "pBubble").catch(() => {}); };
+  await say(r, first ? [C.phrases.orderIt] : [], "pBubble");
+  let wrong = 0, streak = 0;
+  while (built.length < need.length) {
+    const live = cards.filter((c) => !c.disabled);
+    const k = await waitTap(live); check(r);
+    const card = live[k];
+    const expected = need[built.length];
+    if (card.textContent === expected) {
+      card.disabled = true; card.classList.add("used"); built.push(expected); renderLine(); streak = 0;
+      cards.forEach((c) => c.classList.remove("hint", "wrong"));
+    } else {
+      wrong++; streak++;
+      card.classList.remove("wrong"); void card.offsetWidth; card.classList.add("wrong");
+      setTimeout(() => card.classList.remove("wrong"), 450);
+      if (streak >= 2) { const h = cards.find((c) => !c.disabled && c.textContent === expected); if (h) h.classList.add("hint"); }
+    }
+  }
+  setControls(); line.textContent = ex.full.en; mood("happy"); confetti(true);
+  await say(r, [pick(C.praise), ex.full], "pBubble");
+  await sleep(300);
+  return wrong;
+}
+
+async function learnWords(r, lesson) {
+  const words = lesson.words;
+  const graded = !!lesson.grammar;
+  for (let i = 0; i < words.length; i++) {
+    const w = words[i]; dots(words.length, i + 1); boardShow(w, lesson);
+    const clips = [];
+    const heClip = w.he ? { he: w.he } : (w.heF || w.heM) ? { heF: w.heF, heM: w.heM } : null;
+    if (graded) { clips.push({ en: w.en }); if (heClip) clips.push(heClip); }
+    else {
+      if (heClip && !lesson.letters) clips.push(heClip, C.phrases.inEnglish);
+      clips.push({ en: w.en });
+      if (w.x) clips.push(w.x);
+      clips.push({ en: w.en });
+    }
+    await say(r, clips, "pBubble");
+    const [again, next] = setControls(el("button", { class: "btn", text: "🔊 שוב" }), el("button", { class: "btn primary", text: "הלאה ←" }));
+    for (;;) { const k = await waitTap([again, next]); check(r); if (k === 1) break; await say(r, [{ en: w.en }].concat(w.x ? [w.x] : []), "pBubble"); }
+    setControls();
+  }
+}
+async function teachGrammar(r, g) {
+  $("pPhase").textContent = "פינת הדקדוק: " + g.title;
+  dots(0, 0); boardPic("", g.title);
+  $("pBoard").querySelector(".word").classList.add("en-title");
+  await say(r, [C.phrases.grammarTime].concat(g.explain), "pBubble");
+  await say(r, C.phrases.examplesIntro, "pBubble");
+  for (let i = 0; i < g.examples.length; i++) {
+    const x = g.examples[i]; dots(g.examples.length, i + 1); boardSentence(x.en, x.tr);
+    await say(r, [{ en: x.en }], "pBubble");
+    const [again, next] = setControls(el("button", { class: "btn", text: "🔊 שוב" }), el("button", { class: "btn primary", text: "הלאה ←" }));
+    for (;;) { const k = await waitTap([again, next]); check(r); if (k === 1) break; await say(r, [{ en: x.en }], "pBubble"); }
+    setControls();
+  }
+}
+async function sayAloud(r, lesson) {
+  $("pPhase").textContent = "אומרים בקול";
+  const graded = !!lesson.grammar;
+  await say(r, graded ? C.phrases.sayExamples : C.phrases.partSay, "pBubble");
+  const items = graded ? lesson.grammar.examples.map((x) => ({ en: x.en, show: x.en, tr: x.tr, sentence: true }))
+    : kid.level === "tiny" ? shuffle(lesson.words).slice(0, 3) : lesson.words;
+  for (let i = 0; i < items.length; i++) {
+    const w = items[i]; dots(items.length, i + 1);
+    if (w.sentence) boardSentence(w.en, w.tr); else boardShow(w, lesson);
+    const [again, did] = setControls(el("button", { class: "btn", text: "🔊 שוב" }), el("button", { class: "btn good", text: "⭐ אמרתי!" }));
+    await say(r, (i === 0 ? [C.phrases.yourTurn] : []).concat([{ en: w.en }]).concat(i === 0 ? [C.phrases.pressStar] : []), "pBubble");
+    for (;;) { const k = await waitTap([again, did]); check(r); if (k === 1) break; await say(r, [{ en: w.en }], "pBubble"); }
+    setControls(); mood("happy");
+    await say(r, [pick(C.praise.filter((p) => p.en))], "pBubble");
+  }
+}
+
+async function runLesson(lesson) {
+  const r = newRun();
+  show("s-play"); mountAvatar("pAvatar", kid.avatar);
+  $("pChoices").innerHTML = ""; setControls();
+  let mistakes = 0, items = 0;
+  try {
+    // 1. learn
+    $("pPhase").textContent = "מכירים מילים";
+    boardPic(lesson.icon, "");
+    await say(r, [lesson.intro, C.phrases.partLearn], "pBubble");
+    await learnWords(r, lesson);
+    // 2. grammar (graded levels)
+    if (lesson.grammar) await teachGrammar(r, lesson.grammar);
+    // 3. practice
+    if (lesson.exercises) {
+      $("pPhase").textContent = "מתרגלים";
+      await say(r, C.phrases.exercisesIntro, "pBubble");
+      const seen = new Set();
+      for (let i = 0; i < lesson.exercises.length; i++) {
+        const ex = lesson.exercises[i]; dots(lesson.exercises.length, i);
+        const first = !seen.has(ex.type); seen.add(ex.type);
+        const word = ex.word && lesson.words.find((w) => w.id === ex.word);
+        if (ex.type === "pick") mistakes += await pickRound(r, lesson, word);
+        else if (ex.type === "listen") mistakes += await listenRound(r, lesson, word, first);
+        else if (ex.type === "fill") mistakes += await fillRound(r, ex, first);
+        else if (ex.type === "order") mistakes += await orderRound(r, ex, first);
+        items++;
+      }
+      dots(lesson.exercises.length, lesson.exercises.length);
+    } else {
+      $("pPhase").textContent = "משחק: מוצאים את התמונה";
+      await say(r, C.phrases.partPractice, "pBubble");
+      const order = shuffle(lesson.words);
+      for (let i = 0; i < order.length; i++) { dots(order.length, i); mistakes += await pickRound(r, lesson, order[i]); items++; }
+      dots(order.length, order.length);
+    }
+    $("pChoices").innerHTML = "";
+    // 4. say it
+    await sayAloud(r, lesson);
+    // done
+    const rate = items ? mistakes / items : 0;
+    const stars = rate <= 0.1 ? 3 : rate <= 0.35 ? 2 : 1;
+    kid.stars = kid.stars || {}; kid.stars[lesson.id] = Math.max(kid.stars[lesson.id] || 0, stars);
+    kid.words = Array.from(new Set([...(kid.words || []), ...lesson.words.map((w) => lesson.id + ":" + w.id)]));
+    save();
+    $("pPhase").textContent = "סיימנו!"; dots(0, 0);
+    const b = $("pBoard"); b.innerHTML = '<span class="chalk-ledge"></span>';
+    b.append(el("div", { class: "pic", text: "⭐".repeat(stars) }), el("div", { class: "word small", text: "You did it!" }));
+    mood("happy"); confetti();
+    const talk = talkLink("btn");
+    const [back, again] = setControls(el("button", { class: "btn primary", text: "📚 לשיעורים" }), el("button", { class: "btn", text: "🔁 עוד פעם" }), talk);
+    back.onclick = () => showMap(); again.onclick = () => runLesson(lesson);
+    await say(r, [C.phrases.lessonDone, C.phrases.youDidIt].concat(talk ? [C.phrases.talkInvite] : []), "pBubble");
+  } catch (e) { if (!(e instanceof Cancelled)) throw e; }
+}
+
+/* ---------------- placement test ---------------- */
+async function runPlacement(k) {
+  kid = k;
+  const r = newRun();
+  show("s-play"); mountAvatar("pAvatar", kid.avatar);
+  $("pChoices").innerHTML = ""; setControls();
+  $("pPhase").textContent = "מבחן שיבוץ";
+  const secs = C.placement.sections;
+  const total = secs.reduce((a, s) => a + s.items.length, 0);
+  let done = 0;
+  let result = secs[0].level;
+  try {
+    boardPic("📝", "");
+    await say(r, C.phrases.placementIntro, "pBubble");
+    for (const s of secs) {
+      let wrong = 0;
+      for (const it of s.items) {
+        dots(total, done++);
+        let ok;
+        if (it.type === "pick") {
+          boardPic("❓", "");
+          ok = await choiceOnce(r, { cards: it.emoji.map((e) => el("button", { class: "choice" }, el("span", { class: "ic", text: e }))), correct: it.a, prompt: [C.phrases.where, it.say], after: [it.say] });
+        } else {
+          boardSentence(it.q.replace("___", " ____ "), it.tr);
+          const opts = shuffle(it.opts);
+          ok = await choiceOnce(r, { cards: opts.map((o) => textCard(o)), correct: opts.indexOf(it.a), prompt: [], after: [it.full] });
+        }
+        if (!ok) wrong++;
+        if (wrong > 1) break;
+      }
+      if (wrong > 1) break;
+      result = s.pass;
+    }
+    if (kid.age < 5 && result === "starter") result = "tiny";
+    result = highestAvailable(result);
+    dots(total, total);
+    $("pChoices").innerHTML = "";
+    const lv = levelInfo(result);
+    boardPic("🎯", lv.title);
+    mood("happy"); confetti();
+    const yes = el("button", { class: "btn primary", text: `✓ לעבור לרמת ${lv.title}` });
+    const no = el("button", { class: "btn", text: "להשאיר כמו שהיה" });
+    yes.onclick = () => { kid.level = result; kid.placement = { level: result, at: Date.now() }; save(); openParent(); };
+    no.onclick = () => openParent();
+    setControls(yes, no);
+    await say(r, C.phrases.placementDone, "pBubble");
+  } catch (e) { if (!(e instanceof Cancelled)) throw e; }
+}
+const levelHasLessons = (id) => C.lessons.some((l) => l.level === id);
+function highestAvailable(id) {
+  const order = C.levels.map((l) => l.id);
+  for (let i = order.indexOf(id); i >= 0; i--) if (levelHasLessons(order[i])) return order[i];
+  return order[0];
+}
+function nextLevel(k) {
+  const order = C.levels.map((l) => l.id);
+  const nxt = order[order.indexOf(k.level) + 1];
+  if (!nxt || !levelHasLessons(nxt)) return null;
+  const done = lessonsFor(k).every((l) => ((k.stars || {})[l.id] || 0) >= 2);
+  return done ? nxt : null;
+}
+
+/* ---------------- talk with the teacher (ElevenLabs agent) ---------------- */
+let AGENTS = null;
+function talkUrl() {
+  if (!AGENTS || !kid) return null;
+  const lv = AGENTS.levels && AGENTS.levels[kid.level];
+  const id = lv && lv[kidVoice()];
+  return id ? "https://elevenlabs.io/app/talk-to?agent_id=" + encodeURIComponent(id) : null;
+}
+function talkLink(cls) {
+  const url = talkUrl();
+  if (!url) return null;
+  return el("a", { class: cls, href: url, target: "_blank", rel: "noopener" }, "🎤 לדבר עם המורה");
+}
+
+/* ---------------- scripted dialogs ---------------- */
+async function runDialog(d) {
+  const r = newRun();
+  show("s-play"); mountAvatar("pAvatar", kid.avatar);
+  $("pChoices").innerHTML = ""; setControls(); $("pPhase").textContent = d.title;
+  const tiny = kid.level === "tiny";
+  try {
+    for (let i = 0; i < d.steps.length; i++) {
+      const s = d.steps[i]; dots(d.steps.length, i + 1);
+      boardPic(s.pic || d.icon, "");
+      await say(r, s.t, "pBubble");
+      if (!s.opts) { await sleep(500); continue; }
+      let opts = s.opts.slice();
+      if (tiny && opts.length > 2) opts = s.quiz ? shuffle([opts.find((o) => o.ok), pick(opts.filter((o) => !o.ok))]) : opts.slice(0, 2);
+      $("pChoices").style.setProperty("--cols", opts.length >= 3 ? 3 : 2);
+      const cards = opts.map((o) => el("button", { class: "choice" },
+        el("span", { class: "ic", text: o.emoji }), el("span", { class: "lbl", text: o.en }), o.tr ? el("span", { class: "tr", text: o.tr }) : null));
+      $("pChoices").innerHTML = ""; $("pChoices").append(...cards);
+      const [again] = setControls(el("button", { class: "btn", text: "🔊 שוב" }));
+      again.onclick = () => { say(runId, s.t, "pBubble").catch(() => {}); };
+      for (;;) {
+        const k = await waitTap(cards); check(r);
+        const o = opts[k];
+        cards.forEach((c) => (c.disabled = true));
+        await say(r, [{ en: o.en }], "pBubble");
+        if (s.quiz && !o.ok) {
+          cards[k].classList.add("wrong");
+          await say(r, o.r, "pBubble");
+          cards.forEach((c, j) => { if (!cards[j].classList.contains("wrong")) c.disabled = false; });
+          continue;
+        }
+        cards[k].classList.add("right"); mood("happy"); if (s.quiz) confetti(true);
+        await say(r, o.r, "pBubble");
+        break;
+      }
+      setControls(); $("pChoices").innerHTML = "";
+    }
+    kid.talks = kid.talks || {}; kid.talks[d.id] = true; save();
+    mood("happy"); confetti();
+    const [back, again] = setControls(el("button", { class: "btn primary", text: "📚 חזרה" }), el("button", { class: "btn", text: "🔁 עוד פעם" }));
+    back.onclick = () => showMap(); again.onclick = () => runDialog(d);
+    await say(r, C.phrases.talkDone, "pBubble");
+  } catch (e) { if (!(e instanceof Cancelled)) throw e; }
+}
+
+/* ---------------- free chat with Claude (bonus) ---------------- */
+const Chat = {
+  sample: null, available: false, turns: [], ctl: null,
+  async init() {
+    if (!window.claude || !window.claude.use) return;
+    try { this.sample = await window.claude.use("sample"); } catch (e) { this.sample = null; }
+    this.available = !!this.sample;
+    if (!$("s-map").hidden) $("chatEntry").hidden = !this.available;
+  },
+  rules() {
+    const lvl = kid.level === "tiny" ? "a 3-4 year old who does not read yet and knows almost no English" : `a ${kid.age} year old beginner who reads Hebrew and knows very little English`;
+    const learned = (kid.words || []).map((w) => w.split(":")[1]).slice(-60).join(", ") || "none yet";
+    const t = (C.builder.types.find((x) => x.id === kid.avatar.type) || {}).id;
+    return `You are ${kid.avatar.name}, a warm, playful English teacher character (a ${t}) talking with ${kid.name}, ${lvl}. The child speaks Hebrew at home.
+Words the child already learned: ${learned}.
+Rules:
+- Keep every reply tiny: at most one short Hebrew sentence and one short, simple English sentence.
+- Teach or practice one English word or phrase at a time. Reuse learned words. Praise effort.
+- Hebrew must be gender-neutral or plural when addressing the child.
+- Stay on kid-safe learning topics (animals, colors, food, family, play, feelings, numbers). If the child brings up anything else, gently steer back to a learning game.
+- Never ask for personal details such as address, school, phone or photos.
+- Offer 2-3 short English answers the child can tap, each with an emoji and a Hebrew translation.
+Reply with only JSON in exactly this shape:
+{"he":"משפט קצר בעברית","en":"A short English sentence.","emoji":"🐶","options":[{"emoji":"👍","en":"Yes!","tr":"כן"}]}`;
+  },
+  start() {
+    newRun(); show("s-chat"); mountAvatar("cAvatar", kid.avatar);
+    this.turns = []; $("chatLog").innerHTML = ""; $("chatOpts").innerHTML = ""; $("chatNote").textContent = "";
+    this.send("שלום! בואו נשחק באנגלית", true);
+  },
+  addMsg(me, he, en) {
+    const m = el("div", { class: "msg" + (me ? " me" : "") }, he ? el("span", { text: he }) : null, en ? el("span", { class: "en", text: en }) : null);
+    $("chatLog").append(m); m.scrollIntoView({ block: "end", behavior: reduceMotion ? "auto" : "smooth" });
+  },
+  async send(text, hidden) {
+    if (!text) return;
+    if (!hidden) this.addMsg(true, /[֐-׿]/.test(text) ? text : "", /[֐-׿]/.test(text) ? "" : text);
+    this.turns.push({ role: "user", content: text });
+    if (this.turns.length > 14) this.turns = this.turns.slice(-14);
+    while (this.turns.length && this.turns[0].role !== "user") this.turns.shift();
+    const r = newRun();
+    $("chatOpts").innerHTML = ""; $("chatNote").textContent = "המורה חושב…"; $("chatStop").hidden = false;
+    this.ctl = new AbortController();
+    try {
+      const reply = await this.sample.json([{ role: "user", content: this.rules() }, ...this.turns], { cache: false, modelTier: "quick", signal: this.ctl.signal });
+      check(r);
+      const he = typeof reply.he === "string" ? reply.he.slice(0, 200) : "";
+      const en = typeof reply.en === "string" ? reply.en.slice(0, 200) : "";
+      this.turns.push({ role: "assistant", content: JSON.stringify({ he, en }) });
+      $("chatNote").textContent = "";
+      this.addMsg(false, he, ((reply.emoji && typeof reply.emoji === "string") ? reply.emoji.slice(0, 8) + " " : "") + en);
+      const opts = Array.isArray(reply.options) ? reply.options.slice(0, 3) : [];
+      $("chatOpts").innerHTML = "";
+      for (const o of opts) {
+        if (!o || typeof o.en !== "string") continue;
+        $("chatOpts").append(el("button", { class: "choice", onclick: async () => {
+          const rr = newRun(); try { await say(rr, [{ en: o.en }]); } catch (e) {} this.send(o.en);
+        } }, el("span", { class: "ic", text: String(o.emoji || "💬").slice(0, 8) }), el("span", { class: "lbl", text: o.en.slice(0, 60) }), o.tr ? el("span", { class: "tr", text: String(o.tr).slice(0, 60) }) : null));
+      }
+      await say(r, [he ? { he } : null, en ? { en } : null].filter(Boolean).map((c) => c));
+    } catch (e) {
+      if (e instanceof Cancelled) return;
+      const code = e && e.code;
+      if (code === "cancelled") $("chatNote").textContent = "";
+      else if (code === "not_granted" || code === "sampling_disabled" || code === "not_declared" || code === "capability_disabled" || code === "capability_removed") { this.available = false; $("chatNote").textContent = "השיחה החופשית לא זמינה כאן. אפשר להמשיך בשיחות המוכנות."; }
+      else if (code === "rate_limited") $("chatNote").textContent = "המורה צריך הפסקה קטנה. נסו שוב עוד כמה דקות.";
+      else $("chatNote").textContent = "משהו השתבש בתשובה. אפשר לנסות שוב.";
+    } finally { $("chatStop").hidden = true; }
+  },
+};
+$("openChat").onclick = () => Chat.start();
+$("chatForm").addEventListener("submit", (e) => { e.preventDefault(); const v = $("chatInput").value.trim(); $("chatInput").value = ""; Chat.send(v); });
+$("chatStop").onclick = () => Chat.ctl && Chat.ctl.abort();
+
+/* ---------------- confetti ---------------- */
+function confetti(small) {
+  if (reduceMotion) return;
+  const cv = $("confetti"); cv.hidden = false;
+  const ctx = cv.getContext("2d");
+  cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio; ctx.scale(devicePixelRatio, devicePixelRatio);
+  const cols = ["#FF7A3D", "#FFC53D", "#E2557B", "#3B82F6", "#30A46C", "#8E4EC6"];
+  const ps = Array.from({ length: small ? 40 : 110 }, () => ({ x: innerWidth / 2 + (Math.random() - .5) * 200, y: innerHeight * .45, vx: (Math.random() - .5) * 14, vy: -Math.random() * 14 - 4, s: 6 + Math.random() * 8, c: pick(cols), a: Math.random() * 6 }));
+  let f = 0;
+  const tick = () => {
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    for (const p of ps) { p.x += p.vx; p.y += p.vy; p.vy += .45; p.a += .2; ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.fillStyle = p.c; ctx.fillRect(-p.s / 2, -p.s / 4, p.s, p.s / 2); ctx.restore(); }
+    if (++f < 90) requestAnimationFrame(tick); else { ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height); cv.hidden = true; }
+  };
+  tick();
+}
+
+/* ---------------- boot ---------------- */
+$("homeBtn").onclick = () => showHome();
+$("mapBtn").onclick = () => kid && kid.avatar ? showMap() : showHome();
+$("parentBtn").onclick = () => openParent();
+$("startBtn").onclick = () => { Voice.unlock(); showHome(); };
+document.addEventListener("pointerdown", () => Voice.unlock(), { once: true });
+
+(async function boot() {
+  loadLocal();
+  try { C = await (await fetch("content.json")).json(); }
+  catch (e) { document.querySelector(".start-inner .lede").textContent = "לא הצלחתי לטעון את השיעורים. רעננו את הדף."; return; }
+  mountAvatar("startAvatar", (state.kids.find((k) => k.avatar) || {}).avatar || DEFAULT_AV);
+  Voice.loadIndex();
+  fetch("agents.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).then((a) => { AGENTS = a; if (kid && !$("s-map").hidden) renderMap(); }).catch(() => {});
+  Voice.loadBrowserVoices();
+  connectCloud();
+  Chat.init();
+})();
+</script>
+
+</body>
+</html>

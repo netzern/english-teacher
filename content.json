@@ -1,0 +1,5278 @@
+{
+ "version": 1,
+ "phrases": {
+  "welcome": {
+   "he": "שלום! מי לומד איתי היום?"
+  },
+  "hello": {
+   "en": "Hello!"
+  },
+  "inEnglish": {
+   "he": "באנגלית אומרים"
+  },
+  "where": {
+   "he": "איפה"
+  },
+  "yourTurn": {
+   "he": "עכשיו תורכם! תגידו אחריי"
+  },
+  "pressStar": {
+   "he": "אמרתם? לחצו על הכוכב!"
+  },
+  "partLearn": {
+   "he": "קודם נכיר מילים חדשות"
+  },
+  "partPractice": {
+   "he": "עכשיו נשחק! תמצאו את התמונה הנכונה"
+  },
+  "partSay": {
+   "he": "ועכשיו נגיד את המילים בקול"
+  },
+  "lessonDone": {
+   "he": "סיימנו את השיעור! קיבלתם כוכבים"
+  },
+  "youDidIt": {
+   "en": "You did it!"
+  },
+  "bye": {
+   "en": "Bye bye! See you soon!"
+  },
+  "chooseLesson": {
+   "he": "מה נלמד היום? תבחרו שיעור"
+  },
+  "chooseTalk": {
+   "he": "בואו נדבר באנגלית! על מה נדבר?"
+  },
+  "talkDone": {
+   "he": "איזו שיחה נהדרת! כל הכבוד"
+  },
+  "hereItIs": {
+   "he": "הנה, זה כאן"
+  },
+  "listenAgain": {
+   "he": "תקשיבו שוב"
+  },
+  "myNameIs": {
+   "en": "My name is"
+  },
+  "niceToMeet": {
+   "en": "Nice to meet you!"
+  },
+  "parentRead": {
+   "he": "הורה, תקראו לי בבקשה"
+  },
+  "grammarTime": {
+   "he": "ועכשיו, פינת הדקדוק!"
+  },
+  "examplesIntro": {
+   "he": "בואו נשמע כמה דוגמאות"
+  },
+  "exercisesIntro": {
+   "he": "עכשיו מתרגלים!"
+  },
+  "fillIt": {
+   "he": "השלימו את המשפט"
+  },
+  "orderIt": {
+   "he": "סדרו את המילים למשפט"
+  },
+  "listenPick": {
+   "he": "תקשיבו ותבחרו את המילה הנכונה"
+  },
+  "sayExamples": {
+   "he": "ועכשיו תגידו את המשפטים בקול"
+  },
+  "levelUp": {
+   "he": "וואו! סיימתם את כל השיעורים ברמה הזאת. בקשו מאמא או מאבא לעלות רמה!"
+  },
+  "talkInvite": {
+   "he": "רוצים לדבר איתי באמת? לחצו על המיקרופון!"
+  },
+  "placementIntro": {
+   "he": "בואו נראה כמה אנגלית אתם כבר יודעים! תענו מה שאתם יודעים, וזה בסדר לטעות."
+  },
+  "placementDone": {
+   "he": "כל הכבוד! סיימנו. עכשיו ההורים יבחרו את הרמה המתאימה."
+  }
+ },
+ "praise": [
+  {
+   "he": "כל הכבוד!"
+  },
+  {
+   "he": "מצוין!"
+  },
+  {
+   "he": "וואו, איזה יופי!"
+  },
+  {
+   "he": "אלופים!"
+  },
+  {
+   "en": "Great job!"
+  },
+  {
+   "en": "Excellent!"
+  },
+  {
+   "en": "Super!"
+  },
+  {
+   "en": "Well done!"
+  },
+  {
+   "en": "Yay!"
+  }
+ ],
+ "tryAgain": [
+  {
+   "he": "כמעט! בואו ננסה שוב"
+  },
+  {
+   "he": "לא נורא, עוד פעם"
+  },
+  {
+   "he": "אופס! ננסה שוב?"
+  }
+ ],
+ "builder": {
+  "intro": {
+   "he": "בואו נבנה יחד את המורה שלכם!"
+  },
+  "steps": {
+   "type": {
+    "he": "מי יהיה המורה? תבחרו דמות"
+   },
+   "color": {
+    "he": "איזה צבע?"
+   },
+   "hat": {
+    "he": "מה נשים על הראש?"
+   },
+   "glasses": {
+    "he": "רוצים משקפיים?"
+   },
+   "shirt": {
+    "he": "ואיזה צבע החולצה?"
+   },
+   "name": {
+    "he": "איך יקראו לי?"
+   }
+  },
+  "done": {
+   "he": "יש! עכשיו אני המורה שלכם. נעים מאוד!"
+  },
+  "types": [
+   {
+    "id": "girl",
+    "en": "A girl!",
+    "show": "Girl",
+    "voice": "f",
+    "emoji": "👧"
+   },
+   {
+    "id": "boy",
+    "en": "A boy!",
+    "show": "Boy",
+    "voice": "m",
+    "emoji": "👦"
+   },
+   {
+    "id": "robot",
+    "en": "A robot!",
+    "show": "Robot",
+    "voice": "f",
+    "emoji": "🤖"
+   },
+   {
+    "id": "cat",
+    "en": "A cat!",
+    "show": "Cat",
+    "voice": "f",
+    "emoji": "🐱"
+   },
+   {
+    "id": "bear",
+    "en": "A bear!",
+    "show": "Bear",
+    "voice": "m",
+    "emoji": "🐻"
+   },
+   {
+    "id": "dino",
+    "en": "A dinosaur!",
+    "show": "Dinosaur",
+    "voice": "m",
+    "emoji": "🦖"
+   }
+  ],
+  "colors": [
+   {
+    "id": "red",
+    "en": "Red!",
+    "show": "Red",
+    "hex": "#E5484D"
+   },
+   {
+    "id": "blue",
+    "en": "Blue!",
+    "show": "Blue",
+    "hex": "#3B82F6"
+   },
+   {
+    "id": "yellow",
+    "en": "Yellow!",
+    "show": "Yellow",
+    "hex": "#F5C518"
+   },
+   {
+    "id": "green",
+    "en": "Green!",
+    "show": "Green",
+    "hex": "#30A46C"
+   },
+   {
+    "id": "orange",
+    "en": "Orange!",
+    "show": "Orange",
+    "hex": "#F76B15"
+   },
+   {
+    "id": "purple",
+    "en": "Purple!",
+    "show": "Purple",
+    "hex": "#8E4EC6"
+   },
+   {
+    "id": "pink",
+    "en": "Pink!",
+    "show": "Pink",
+    "hex": "#E93D82"
+   },
+   {
+    "id": "brown",
+    "en": "Brown!",
+    "show": "Brown",
+    "hex": "#8D5B3A"
+   },
+   {
+    "id": "black",
+    "en": "Black!",
+    "show": "Black",
+    "hex": "#2B2B2E"
+   },
+   {
+    "id": "white",
+    "en": "White!",
+    "show": "White",
+    "hex": "#F4F4F5"
+   }
+  ],
+  "skins": [
+   "#F9D7B9",
+   "#EBB98F",
+   "#C98B5E",
+   "#8D5A3B",
+   "#5C3A26"
+  ],
+  "hats": [
+   {
+    "id": "none",
+    "en": "No hat!",
+    "show": "No hat",
+    "emoji": "🚫"
+   },
+   {
+    "id": "cap",
+    "en": "A cap!",
+    "show": "Cap",
+    "emoji": "🧢"
+   },
+   {
+    "id": "crown",
+    "en": "A crown!",
+    "show": "Crown",
+    "emoji": "👑"
+   },
+   {
+    "id": "bow",
+    "en": "A bow!",
+    "show": "Bow",
+    "emoji": "🎀"
+   },
+   {
+    "id": "party",
+    "en": "A party hat!",
+    "show": "Party hat",
+    "emoji": "🥳"
+   },
+   {
+    "id": "wizard",
+    "en": "A wizard hat!",
+    "show": "Wizard hat",
+    "emoji": "🧙"
+   },
+   {
+    "id": "flower",
+    "en": "A flower!",
+    "show": "Flower",
+    "emoji": "🌼"
+   }
+  ],
+  "glasses": [
+   {
+    "id": "none",
+    "en": "No glasses!",
+    "show": "No glasses",
+    "emoji": "🚫"
+   },
+   {
+    "id": "round",
+    "en": "Glasses!",
+    "show": "Glasses",
+    "emoji": "👓"
+   },
+   {
+    "id": "star",
+    "en": "Star glasses!",
+    "show": "Star glasses",
+    "emoji": "⭐"
+   },
+   {
+    "id": "sun",
+    "en": "Sunglasses!",
+    "show": "Sunglasses",
+    "emoji": "🕶️"
+   }
+  ],
+  "names": [
+   {
+    "id": "Bubu",
+    "en": "My name is Bubu!"
+   },
+   {
+    "id": "Lulu",
+    "en": "My name is Lulu!"
+   },
+   {
+    "id": "Tom",
+    "en": "My name is Tom!"
+   },
+   {
+    "id": "Mimi",
+    "en": "My name is Mimi!"
+   },
+   {
+    "id": "Max",
+    "en": "My name is Max!"
+   },
+   {
+    "id": "Bella",
+    "en": "My name is Bella!"
+   }
+  ]
+ },
+ "levels": [
+  {
+   "id": "tiny",
+   "title": "קטנטנים",
+   "options": 2,
+   "age": "3–5"
+  },
+  {
+   "id": "starter",
+   "title": "מתחילים",
+   "options": 4,
+   "age": "6–8"
+  },
+  {
+   "id": "basic",
+   "title": "בסיס",
+   "options": 4,
+   "age": "8–10"
+  },
+  {
+   "id": "explorer",
+   "title": "מתקדמים",
+   "options": 4,
+   "age": "9–11"
+  },
+  {
+   "id": "reader",
+   "title": "קוראים",
+   "options": 4,
+   "age": "10–12"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "t-colors",
+   "level": "tiny",
+   "title": "צבעים",
+   "icon": "🎨",
+   "intro": {
+    "he": "היום נלמד צבעים!"
+   },
+   "words": [
+    {
+     "id": "red",
+     "en": "Red",
+     "he": "אדום",
+     "emoji": "🔴"
+    },
+    {
+     "id": "blue",
+     "en": "Blue",
+     "he": "כחול",
+     "emoji": "🔵"
+    },
+    {
+     "id": "yellow",
+     "en": "Yellow",
+     "he": "צהוב",
+     "emoji": "🟡"
+    },
+    {
+     "id": "green",
+     "en": "Green",
+     "he": "ירוק",
+     "emoji": "🟢"
+    }
+   ]
+  },
+  {
+   "id": "t-animals",
+   "level": "tiny",
+   "title": "חיות",
+   "icon": "🐶",
+   "intro": {
+    "he": "היום נפגוש חיות!"
+   },
+   "words": [
+    {
+     "id": "dog",
+     "en": "Dog",
+     "he": "כלב",
+     "emoji": "🐶",
+     "x": {
+      "en": "The dog says woof woof!"
+     }
+    },
+    {
+     "id": "cat",
+     "en": "Cat",
+     "he": "חתול",
+     "emoji": "🐱",
+     "x": {
+      "en": "The cat says meow!"
+     }
+    },
+    {
+     "id": "cow",
+     "en": "Cow",
+     "he": "פרה",
+     "emoji": "🐮",
+     "x": {
+      "en": "The cow says moo!"
+     }
+    },
+    {
+     "id": "duck",
+     "en": "Duck",
+     "he": "ברווז",
+     "emoji": "🦆",
+     "x": {
+      "en": "The duck says quack quack!"
+     }
+    }
+   ]
+  },
+  {
+   "id": "t-count",
+   "level": "tiny",
+   "title": "סופרים עד 5",
+   "icon": "🖐️",
+   "intro": {
+    "he": "היום נספור עד חמש!"
+   },
+   "words": [
+    {
+     "id": "one",
+     "en": "One",
+     "he": "אחת",
+     "emoji": "🍎",
+     "count": 1,
+     "show": "1"
+    },
+    {
+     "id": "two",
+     "en": "Two",
+     "he": "שתיים",
+     "emoji": "🍎",
+     "count": 2,
+     "show": "2"
+    },
+    {
+     "id": "three",
+     "en": "Three",
+     "he": "שלוש",
+     "emoji": "🍎",
+     "count": 3,
+     "show": "3"
+    },
+    {
+     "id": "four",
+     "en": "Four",
+     "he": "ארבע",
+     "emoji": "🍎",
+     "count": 4,
+     "show": "4"
+    },
+    {
+     "id": "five",
+     "en": "Five",
+     "he": "חמש",
+     "emoji": "🍎",
+     "count": 5,
+     "show": "5"
+    }
+   ]
+  },
+  {
+   "id": "t-body",
+   "level": "tiny",
+   "title": "הגוף שלי",
+   "icon": "👃",
+   "intro": {
+    "he": "היום נלמד על הגוף שלנו!"
+   },
+   "words": [
+    {
+     "id": "eyes",
+     "en": "Eyes",
+     "he": "עיניים",
+     "emoji": "👀"
+    },
+    {
+     "id": "nose",
+     "en": "Nose",
+     "he": "אף",
+     "emoji": "👃"
+    },
+    {
+     "id": "mouth",
+     "en": "Mouth",
+     "he": "פה",
+     "emoji": "👄"
+    },
+    {
+     "id": "ears",
+     "en": "Ears",
+     "he": "אוזניים",
+     "emoji": "👂"
+    },
+    {
+     "id": "hands",
+     "en": "Hands",
+     "he": "ידיים",
+     "emoji": "👐"
+    }
+   ]
+  },
+  {
+   "id": "t-hello",
+   "level": "tiny",
+   "title": "שלום ותודה",
+   "icon": "👋",
+   "intro": {
+    "he": "היום נלמד מילים נחמדות!"
+   },
+   "words": [
+    {
+     "id": "hello",
+     "en": "Hello",
+     "he": "שלום",
+     "emoji": "👋"
+    },
+    {
+     "id": "thanks",
+     "en": "Thank you",
+     "he": "תודה",
+     "emoji": "🙏"
+    },
+    {
+     "id": "yes",
+     "en": "Yes",
+     "he": "כן",
+     "emoji": "👍"
+    },
+    {
+     "id": "no",
+     "en": "No",
+     "he": "לא",
+     "emoji": "👎"
+    }
+   ]
+  },
+  {
+   "id": "t-fruit",
+   "level": "tiny",
+   "title": "פירות",
+   "icon": "🍌",
+   "intro": {
+    "he": "היום נלמד פירות טעימים!"
+   },
+   "words": [
+    {
+     "id": "apple",
+     "en": "Apple",
+     "he": "תפוח",
+     "emoji": "🍎"
+    },
+    {
+     "id": "banana",
+     "en": "Banana",
+     "he": "בננה",
+     "emoji": "🍌"
+    },
+    {
+     "id": "strawberry",
+     "en": "Strawberry",
+     "he": "תות",
+     "emoji": "🍓"
+    },
+    {
+     "id": "grapes",
+     "en": "Grapes",
+     "he": "ענבים",
+     "emoji": "🍇"
+    }
+   ]
+  },
+  {
+   "id": "t-toys",
+   "level": "tiny",
+   "title": "צעצועים",
+   "icon": "🧸",
+   "intro": {
+    "he": "היום נלמד על צעצועים!"
+   },
+   "words": [
+    {
+     "id": "ball",
+     "en": "Ball",
+     "he": "כדור",
+     "emoji": "⚽"
+    },
+    {
+     "id": "car",
+     "en": "Car",
+     "he": "מכונית",
+     "emoji": "🚗"
+    },
+    {
+     "id": "teddy",
+     "en": "Teddy bear",
+     "he": "דובי",
+     "emoji": "🧸"
+    },
+    {
+     "id": "balloon",
+     "en": "Balloon",
+     "he": "בלון",
+     "emoji": "🎈"
+    }
+   ]
+  },
+  {
+   "id": "t-colors2",
+   "level": "tiny",
+   "title": "עוד צבעים",
+   "icon": "🌈",
+   "intro": {
+    "he": "עוד צבעים יפים!"
+   },
+   "words": [
+    {
+     "id": "orange",
+     "en": "Orange",
+     "he": "כתום",
+     "emoji": "🟠"
+    },
+    {
+     "id": "purple",
+     "en": "Purple",
+     "he": "סגול",
+     "emoji": "🟣"
+    },
+    {
+     "id": "pink",
+     "en": "Pink",
+     "he": "ורוד",
+     "emoji": "🩷"
+    },
+    {
+     "id": "white",
+     "en": "White",
+     "he": "לבן",
+     "emoji": "⚪"
+    }
+   ]
+  },
+  {
+   "id": "s-hello",
+   "level": "starter",
+   "title": "מילים ראשונות",
+   "icon": "👋",
+   "intro": {
+    "he": "היום נלמד איך מדברים יפה באנגלית!"
+   },
+   "words": [
+    {
+     "id": "hello",
+     "en": "Hello",
+     "he": "שלום",
+     "emoji": "👋"
+    },
+    {
+     "id": "goodbye",
+     "en": "Goodbye",
+     "he": "להתראות",
+     "emoji": "🚪"
+    },
+    {
+     "id": "yes",
+     "en": "Yes",
+     "he": "כן",
+     "emoji": "👍"
+    },
+    {
+     "id": "no",
+     "en": "No",
+     "he": "לא",
+     "emoji": "👎"
+    },
+    {
+     "id": "please",
+     "en": "Please",
+     "he": "בבקשה",
+     "emoji": "🥺"
+    },
+    {
+     "id": "thanks",
+     "en": "Thank you",
+     "he": "תודה",
+     "emoji": "🙏"
+    },
+    {
+     "id": "morning",
+     "en": "Good morning",
+     "he": "בוקר טוב",
+     "emoji": "🌅"
+    },
+    {
+     "id": "night",
+     "en": "Good night",
+     "he": "לילה טוב",
+     "emoji": "🌙"
+    }
+   ]
+  },
+  {
+   "id": "s-colors",
+   "level": "starter",
+   "title": "צבעים",
+   "icon": "🎨",
+   "intro": {
+    "he": "היום נלמד את כל הצבעים!"
+   },
+   "words": [
+    {
+     "id": "red",
+     "en": "Red",
+     "he": "אדום",
+     "emoji": "🔴"
+    },
+    {
+     "id": "blue",
+     "en": "Blue",
+     "he": "כחול",
+     "emoji": "🔵"
+    },
+    {
+     "id": "yellow",
+     "en": "Yellow",
+     "he": "צהוב",
+     "emoji": "🟡"
+    },
+    {
+     "id": "green",
+     "en": "Green",
+     "he": "ירוק",
+     "emoji": "🟢"
+    },
+    {
+     "id": "orange",
+     "en": "Orange",
+     "he": "כתום",
+     "emoji": "🟠"
+    },
+    {
+     "id": "purple",
+     "en": "Purple",
+     "he": "סגול",
+     "emoji": "🟣"
+    },
+    {
+     "id": "pink",
+     "en": "Pink",
+     "he": "ורוד",
+     "emoji": "🩷"
+    },
+    {
+     "id": "brown",
+     "en": "Brown",
+     "he": "חום",
+     "emoji": "🟤"
+    },
+    {
+     "id": "black",
+     "en": "Black",
+     "he": "שחור",
+     "emoji": "⚫"
+    },
+    {
+     "id": "white",
+     "en": "White",
+     "he": "לבן",
+     "emoji": "⚪"
+    }
+   ]
+  },
+  {
+   "id": "s-numbers",
+   "level": "starter",
+   "title": "מספרים 1 עד 10",
+   "icon": "🔢",
+   "intro": {
+    "he": "היום נספור עד עשר!"
+   },
+   "words": [
+    {
+     "id": "one",
+     "en": "One",
+     "he": "אחת",
+     "emoji": "⭐",
+     "count": 1,
+     "show": "1"
+    },
+    {
+     "id": "two",
+     "en": "Two",
+     "he": "שתיים",
+     "emoji": "⭐",
+     "count": 2,
+     "show": "2"
+    },
+    {
+     "id": "three",
+     "en": "Three",
+     "he": "שלוש",
+     "emoji": "⭐",
+     "count": 3,
+     "show": "3"
+    },
+    {
+     "id": "four",
+     "en": "Four",
+     "he": "ארבע",
+     "emoji": "⭐",
+     "count": 4,
+     "show": "4"
+    },
+    {
+     "id": "five",
+     "en": "Five",
+     "he": "חמש",
+     "emoji": "⭐",
+     "count": 5,
+     "show": "5"
+    },
+    {
+     "id": "six",
+     "en": "Six",
+     "he": "שש",
+     "emoji": "⭐",
+     "count": 6,
+     "show": "6"
+    },
+    {
+     "id": "seven",
+     "en": "Seven",
+     "he": "שבע",
+     "emoji": "⭐",
+     "count": 7,
+     "show": "7"
+    },
+    {
+     "id": "eight",
+     "en": "Eight",
+     "he": "שמונה",
+     "emoji": "⭐",
+     "count": 8,
+     "show": "8"
+    },
+    {
+     "id": "nine",
+     "en": "Nine",
+     "he": "תשע",
+     "emoji": "⭐",
+     "count": 9,
+     "show": "9"
+    },
+    {
+     "id": "ten",
+     "en": "Ten",
+     "he": "עשר",
+     "emoji": "⭐",
+     "count": 10,
+     "show": "10"
+    }
+   ]
+  },
+  {
+   "id": "s-animals",
+   "level": "starter",
+   "title": "חיות",
+   "icon": "🦁",
+   "intro": {
+    "he": "היום נלמד שמות של חיות!"
+   },
+   "words": [
+    {
+     "id": "dog",
+     "en": "Dog",
+     "he": "כלב",
+     "emoji": "🐶"
+    },
+    {
+     "id": "cat",
+     "en": "Cat",
+     "he": "חתול",
+     "emoji": "🐱"
+    },
+    {
+     "id": "cow",
+     "en": "Cow",
+     "he": "פרה",
+     "emoji": "🐮"
+    },
+    {
+     "id": "horse",
+     "en": "Horse",
+     "he": "סוס",
+     "emoji": "🐴"
+    },
+    {
+     "id": "lion",
+     "en": "Lion",
+     "he": "אריה",
+     "emoji": "🦁"
+    },
+    {
+     "id": "elephant",
+     "en": "Elephant",
+     "he": "פיל",
+     "emoji": "🐘"
+    },
+    {
+     "id": "monkey",
+     "en": "Monkey",
+     "he": "קוף",
+     "emoji": "🐒"
+    },
+    {
+     "id": "fish",
+     "en": "Fish",
+     "he": "דג",
+     "emoji": "🐟"
+    },
+    {
+     "id": "bird",
+     "en": "Bird",
+     "he": "ציפור",
+     "emoji": "🐦"
+    }
+   ]
+  },
+  {
+   "id": "s-family",
+   "level": "starter",
+   "title": "המשפחה",
+   "icon": "👨‍👩‍👧",
+   "intro": {
+    "he": "היום נלמד על המשפחה!"
+   },
+   "words": [
+    {
+     "id": "mom",
+     "en": "Mom",
+     "he": "אמא",
+     "emoji": "👩"
+    },
+    {
+     "id": "dad",
+     "en": "Dad",
+     "he": "אבא",
+     "emoji": "👨"
+    },
+    {
+     "id": "brother",
+     "en": "Brother",
+     "he": "אח",
+     "emoji": "👦"
+    },
+    {
+     "id": "sister",
+     "en": "Sister",
+     "he": "אחות",
+     "emoji": "👧"
+    },
+    {
+     "id": "baby",
+     "en": "Baby",
+     "he": "תינוק",
+     "emoji": "👶"
+    },
+    {
+     "id": "grandma",
+     "en": "Grandma",
+     "he": "סבתא",
+     "emoji": "👵"
+    },
+    {
+     "id": "grandpa",
+     "en": "Grandpa",
+     "he": "סבא",
+     "emoji": "👴"
+    }
+   ]
+  },
+  {
+   "id": "s-food",
+   "level": "starter",
+   "title": "אוכל",
+   "icon": "🍕",
+   "intro": {
+    "he": "היום נלמד מילים של אוכל, יאמי!"
+   },
+   "words": [
+    {
+     "id": "apple",
+     "en": "Apple",
+     "he": "תפוח",
+     "emoji": "🍎"
+    },
+    {
+     "id": "banana",
+     "en": "Banana",
+     "he": "בננה",
+     "emoji": "🍌"
+    },
+    {
+     "id": "bread",
+     "en": "Bread",
+     "he": "לחם",
+     "emoji": "🍞"
+    },
+    {
+     "id": "milk",
+     "en": "Milk",
+     "he": "חלב",
+     "emoji": "🥛"
+    },
+    {
+     "id": "water",
+     "en": "Water",
+     "he": "מים",
+     "emoji": "💧"
+    },
+    {
+     "id": "egg",
+     "en": "Egg",
+     "he": "ביצה",
+     "emoji": "🥚"
+    },
+    {
+     "id": "cheese",
+     "en": "Cheese",
+     "he": "גבינה",
+     "emoji": "🧀"
+    },
+    {
+     "id": "pizza",
+     "en": "Pizza",
+     "he": "פיצה",
+     "emoji": "🍕"
+    },
+    {
+     "id": "icecream",
+     "en": "Ice cream",
+     "he": "גלידה",
+     "emoji": "🍦"
+    }
+   ]
+  },
+  {
+   "id": "s-body",
+   "level": "starter",
+   "title": "הגוף",
+   "icon": "🦶",
+   "intro": {
+    "he": "היום נלמד את חלקי הגוף!"
+   },
+   "words": [
+    {
+     "id": "head",
+     "en": "Head",
+     "he": "ראש",
+     "emoji": "🙂"
+    },
+    {
+     "id": "hair",
+     "en": "Hair",
+     "he": "שיער",
+     "emoji": "💇"
+    },
+    {
+     "id": "eyes",
+     "en": "Eyes",
+     "he": "עיניים",
+     "emoji": "👀"
+    },
+    {
+     "id": "ears",
+     "en": "Ears",
+     "he": "אוזניים",
+     "emoji": "👂"
+    },
+    {
+     "id": "nose",
+     "en": "Nose",
+     "he": "אף",
+     "emoji": "👃"
+    },
+    {
+     "id": "mouth",
+     "en": "Mouth",
+     "he": "פה",
+     "emoji": "👄"
+    },
+    {
+     "id": "hands",
+     "en": "Hands",
+     "he": "ידיים",
+     "emoji": "👐"
+    },
+    {
+     "id": "feet",
+     "en": "Feet",
+     "he": "רגליים",
+     "emoji": "🦶"
+    }
+   ]
+  },
+  {
+   "id": "s-clothes",
+   "level": "starter",
+   "title": "בגדים",
+   "icon": "👕",
+   "intro": {
+    "he": "היום נלמד שמות של בגדים!"
+   },
+   "words": [
+    {
+     "id": "shirt",
+     "en": "Shirt",
+     "he": "חולצה",
+     "emoji": "👕"
+    },
+    {
+     "id": "pants",
+     "en": "Pants",
+     "he": "מכנסיים",
+     "emoji": "👖"
+    },
+    {
+     "id": "dress",
+     "en": "Dress",
+     "he": "שמלה",
+     "emoji": "👗"
+    },
+    {
+     "id": "shoes",
+     "en": "Shoes",
+     "he": "נעליים",
+     "emoji": "👟"
+    },
+    {
+     "id": "socks",
+     "en": "Socks",
+     "he": "גרביים",
+     "emoji": "🧦"
+    },
+    {
+     "id": "hat",
+     "en": "Hat",
+     "he": "כובע",
+     "emoji": "🧢"
+    },
+    {
+     "id": "coat",
+     "en": "Coat",
+     "he": "מעיל",
+     "emoji": "🧥"
+    }
+   ]
+  },
+  {
+   "id": "s-letters1",
+   "level": "starter",
+   "title": "אותיות A עד M",
+   "icon": "🔤",
+   "intro": {
+    "he": "היום נכיר אותיות באנגלית!"
+   },
+   "letters": true,
+   "words": [
+    {
+     "id": "A",
+     "en": "A!",
+     "show": "A a",
+     "emoji": "🍎",
+     "x": {
+      "en": "A is for apple."
+     }
+    },
+    {
+     "id": "B",
+     "en": "B!",
+     "show": "B b",
+     "emoji": "⚽",
+     "x": {
+      "en": "B is for ball."
+     }
+    },
+    {
+     "id": "C",
+     "en": "C!",
+     "show": "C c",
+     "emoji": "🐱",
+     "x": {
+      "en": "C is for cat."
+     }
+    },
+    {
+     "id": "D",
+     "en": "D!",
+     "show": "D d",
+     "emoji": "🐶",
+     "x": {
+      "en": "D is for dog."
+     }
+    },
+    {
+     "id": "E",
+     "en": "E!",
+     "show": "E e",
+     "emoji": "🐘",
+     "x": {
+      "en": "E is for elephant."
+     }
+    },
+    {
+     "id": "F",
+     "en": "F!",
+     "show": "F f",
+     "emoji": "🐟",
+     "x": {
+      "en": "F is for fish."
+     }
+    },
+    {
+     "id": "G",
+     "en": "G!",
+     "show": "G g",
+     "emoji": "🍇",
+     "x": {
+      "en": "G is for grapes."
+     }
+    },
+    {
+     "id": "H",
+     "en": "H!",
+     "show": "H h",
+     "emoji": "🏠",
+     "x": {
+      "en": "H is for house."
+     }
+    },
+    {
+     "id": "I",
+     "en": "I!",
+     "show": "I i",
+     "emoji": "🍦",
+     "x": {
+      "en": "I is for ice cream."
+     }
+    },
+    {
+     "id": "J",
+     "en": "J!",
+     "show": "J j",
+     "emoji": "🧃",
+     "x": {
+      "en": "J is for juice."
+     }
+    },
+    {
+     "id": "K",
+     "en": "K!",
+     "show": "K k",
+     "emoji": "🪁",
+     "x": {
+      "en": "K is for kite."
+     }
+    },
+    {
+     "id": "L",
+     "en": "L!",
+     "show": "L l",
+     "emoji": "🦁",
+     "x": {
+      "en": "L is for lion."
+     }
+    },
+    {
+     "id": "M",
+     "en": "M!",
+     "show": "M m",
+     "emoji": "🐒",
+     "x": {
+      "en": "M is for monkey."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s-letters2",
+   "level": "starter",
+   "title": "אותיות N עד Z",
+   "icon": "🔡",
+   "intro": {
+    "he": "עוד אותיות באנגלית!"
+   },
+   "letters": true,
+   "words": [
+    {
+     "id": "N",
+     "en": "N!",
+     "show": "N n",
+     "emoji": "👃",
+     "x": {
+      "en": "N is for nose."
+     }
+    },
+    {
+     "id": "O",
+     "en": "O!",
+     "show": "O o",
+     "emoji": "🐙",
+     "x": {
+      "en": "O is for octopus."
+     }
+    },
+    {
+     "id": "P",
+     "en": "P!",
+     "show": "P p",
+     "emoji": "🍕",
+     "x": {
+      "en": "P is for pizza."
+     }
+    },
+    {
+     "id": "Q",
+     "en": "Q!",
+     "show": "Q q",
+     "emoji": "👑",
+     "x": {
+      "en": "Q is for queen."
+     }
+    },
+    {
+     "id": "R",
+     "en": "R!",
+     "show": "R r",
+     "emoji": "🌈",
+     "x": {
+      "en": "R is for rainbow."
+     }
+    },
+    {
+     "id": "S",
+     "en": "S!",
+     "show": "S s",
+     "emoji": "☀️",
+     "x": {
+      "en": "S is for sun."
+     }
+    },
+    {
+     "id": "T",
+     "en": "T!",
+     "show": "T t",
+     "emoji": "🐯",
+     "x": {
+      "en": "T is for tiger."
+     }
+    },
+    {
+     "id": "U",
+     "en": "U!",
+     "show": "U u",
+     "emoji": "☂️",
+     "x": {
+      "en": "U is for umbrella."
+     }
+    },
+    {
+     "id": "V",
+     "en": "V!",
+     "show": "V v",
+     "emoji": "🎻",
+     "x": {
+      "en": "V is for violin."
+     }
+    },
+    {
+     "id": "W",
+     "en": "W!",
+     "show": "W w",
+     "emoji": "🍉",
+     "x": {
+      "en": "W is for watermelon."
+     }
+    },
+    {
+     "id": "X",
+     "en": "X!",
+     "show": "X x",
+     "emoji": "🩻",
+     "x": {
+      "en": "X is for x-ray."
+     }
+    },
+    {
+     "id": "Y",
+     "en": "Y!",
+     "show": "Y y",
+     "emoji": "🪀",
+     "x": {
+      "en": "Y is for yo-yo."
+     }
+    },
+    {
+     "id": "Z",
+     "en": "Z!",
+     "show": "Z z",
+     "emoji": "🦓",
+     "x": {
+      "en": "Z is for zebra."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s-feelings",
+   "level": "starter",
+   "title": "רגשות",
+   "icon": "😊",
+   "intro": {
+    "he": "היום נלמד איך אומרים מה מרגישים!"
+   },
+   "words": [
+    {
+     "id": "happy",
+     "en": "Happy",
+     "he": "שמח",
+     "emoji": "😀"
+    },
+    {
+     "id": "sad",
+     "en": "Sad",
+     "he": "עצוב",
+     "emoji": "😢"
+    },
+    {
+     "id": "angry",
+     "en": "Angry",
+     "he": "כועס",
+     "emoji": "😠"
+    },
+    {
+     "id": "tired",
+     "en": "Tired",
+     "he": "עייף",
+     "emoji": "😴"
+    },
+    {
+     "id": "hungry",
+     "en": "Hungry",
+     "he": "רעב",
+     "emoji": "😋"
+    },
+    {
+     "id": "scared",
+     "en": "Scared",
+     "he": "מפחד",
+     "emoji": "😱"
+    }
+   ]
+  },
+  {
+   "id": "s-actions",
+   "level": "starter",
+   "title": "פעולות",
+   "icon": "🏃",
+   "intro": {
+    "he": "היום נלמד מילים של תנועה!"
+   },
+   "words": [
+    {
+     "id": "run",
+     "en": "Run",
+     "he": "לרוץ",
+     "emoji": "🏃"
+    },
+    {
+     "id": "jump",
+     "en": "Jump",
+     "he": "לקפוץ",
+     "emoji": "🦘"
+    },
+    {
+     "id": "swim",
+     "en": "Swim",
+     "he": "לשחות",
+     "emoji": "🏊"
+    },
+    {
+     "id": "eat",
+     "en": "Eat",
+     "he": "לאכול",
+     "emoji": "🍽️"
+    },
+    {
+     "id": "sleep",
+     "en": "Sleep",
+     "he": "לישון",
+     "emoji": "😴"
+    },
+    {
+     "id": "dance",
+     "en": "Dance",
+     "he": "לרקוד",
+     "emoji": "💃"
+    }
+   ]
+  },
+  {
+   "id": "s-numbers2",
+   "level": "starter",
+   "title": "מספרים 11 עד 20",
+   "icon": "🔟",
+   "intro": {
+    "he": "היום נספור עד עשרים!"
+   },
+   "words": [
+    {
+     "id": "eleven",
+     "en": "Eleven",
+     "he": "אחת עשרה",
+     "show": "11"
+    },
+    {
+     "id": "twelve",
+     "en": "Twelve",
+     "he": "שתים עשרה",
+     "show": "12"
+    },
+    {
+     "id": "thirteen",
+     "en": "Thirteen",
+     "he": "שלוש עשרה",
+     "show": "13"
+    },
+    {
+     "id": "fourteen",
+     "en": "Fourteen",
+     "he": "ארבע עשרה",
+     "show": "14"
+    },
+    {
+     "id": "fifteen",
+     "en": "Fifteen",
+     "he": "חמש עשרה",
+     "show": "15"
+    },
+    {
+     "id": "sixteen",
+     "en": "Sixteen",
+     "he": "שש עשרה",
+     "show": "16"
+    },
+    {
+     "id": "seventeen",
+     "en": "Seventeen",
+     "he": "שבע עשרה",
+     "show": "17"
+    },
+    {
+     "id": "eighteen",
+     "en": "Eighteen",
+     "he": "שמונה עשרה",
+     "show": "18"
+    },
+    {
+     "id": "nineteen",
+     "en": "Nineteen",
+     "he": "תשע עשרה",
+     "show": "19"
+    },
+    {
+     "id": "twenty",
+     "en": "Twenty",
+     "he": "עשרים",
+     "show": "20"
+    }
+   ]
+  },
+  {
+   "id": "s-thisis",
+   "level": "starter",
+   "title": "משפט: This is",
+   "icon": "👉",
+   "intro": {
+    "he": "היום נגיד משפטים שלמים! באנגלית, זה אומרים this is"
+   },
+   "words": [
+    {
+     "id": "dog",
+     "en": "This is a dog.",
+     "he": "זה כלב",
+     "emoji": "🐶"
+    },
+    {
+     "id": "ball",
+     "en": "This is a ball.",
+     "he": "זה כדור",
+     "emoji": "⚽"
+    },
+    {
+     "id": "car",
+     "en": "This is a car.",
+     "he": "זאת מכונית",
+     "emoji": "🚗"
+    },
+    {
+     "id": "book",
+     "en": "This is a book.",
+     "he": "זה ספר",
+     "emoji": "📖"
+    },
+    {
+     "id": "house",
+     "en": "This is a house.",
+     "he": "זה בית",
+     "emoji": "🏠"
+    },
+    {
+     "id": "tree",
+     "en": "This is a tree.",
+     "he": "זה עץ",
+     "emoji": "🌳"
+    }
+   ]
+  },
+  {
+   "id": "s-ilike",
+   "level": "starter",
+   "title": "משפט: I like",
+   "icon": "❤️",
+   "intro": {
+    "he": "היום נגיד מה אנחנו אוהבים!"
+   },
+   "words": [
+    {
+     "id": "apples",
+     "en": "I like apples.",
+     "heF": "אני אוהבת תפוחים",
+     "heM": "אני אוהב תפוחים",
+     "emoji": "🍎"
+    },
+    {
+     "id": "pizza",
+     "en": "I like pizza.",
+     "heF": "אני אוהבת פיצה",
+     "heM": "אני אוהב פיצה",
+     "emoji": "🍕"
+    },
+    {
+     "id": "dogs",
+     "en": "I like dogs.",
+     "heF": "אני אוהבת כלבים",
+     "heM": "אני אוהב כלבים",
+     "emoji": "🐶"
+    },
+    {
+     "id": "play",
+     "en": "I like to play.",
+     "heF": "אני אוהבת לשחק",
+     "heM": "אני אוהב לשחק",
+     "emoji": "🤸"
+    },
+    {
+     "id": "swim",
+     "en": "I like to swim.",
+     "heF": "אני אוהבת לשחות",
+     "heM": "אני אוהב לשחות",
+     "emoji": "🏊"
+    },
+    {
+     "id": "icecream",
+     "en": "I like ice cream.",
+     "heF": "אני אוהבת גלידה",
+     "heM": "אני אוהב גלידה",
+     "emoji": "🍦"
+    }
+   ]
+  },
+  {
+   "id": "b-tobe",
+   "title": "I am, you are",
+   "icon": "🙋",
+   "intro": {
+    "he": "היום נלמד לדבר על עצמנו ועל אחרים!"
+   },
+   "words": [
+    {
+     "id": "I",
+     "en": "I",
+     "he": "אני",
+     "emoji": "🙋"
+    },
+    {
+     "id": "you",
+     "en": "you",
+     "he": "אתה",
+     "emoji": "👉"
+    },
+    {
+     "id": "he",
+     "en": "he",
+     "he": "הוא",
+     "emoji": "👦"
+    },
+    {
+     "id": "she",
+     "en": "she",
+     "he": "היא",
+     "emoji": "👧"
+    },
+    {
+     "id": "it",
+     "en": "it",
+     "he": "זה",
+     "emoji": "🐶"
+    },
+    {
+     "id": "we",
+     "en": "we",
+     "he": "אנחנו",
+     "emoji": "👫"
+    },
+    {
+     "id": "they",
+     "en": "they",
+     "he": "הם",
+     "emoji": "👨‍👩‍👧"
+    },
+    {
+     "id": "happy",
+     "en": "happy",
+     "he": "שמח",
+     "emoji": "😀"
+    },
+    {
+     "id": "sad",
+     "en": "sad",
+     "he": "עצוב",
+     "emoji": "😢"
+    },
+    {
+     "id": "tired",
+     "en": "tired",
+     "he": "עייף",
+     "emoji": "😴"
+    },
+    {
+     "id": "hungry",
+     "en": "hungry",
+     "he": "רעב",
+     "emoji": "😋"
+    },
+    {
+     "id": "hot",
+     "en": "hot",
+     "he": "חם",
+     "emoji": "🥵"
+    },
+    {
+     "id": "cold",
+     "en": "cold",
+     "he": "קר",
+     "emoji": "🥶"
+    },
+    {
+     "id": "funny",
+     "en": "funny",
+     "he": "מצחיק",
+     "emoji": "🤪"
+    }
+   ],
+   "grammar": {
+    "title": "am / is / are",
+    "explain": [
+     {
+      "he": "באנגלית, בין המילה אני לבין איך אני מרגיש, שמים מילה קטנה."
+     },
+     {
+      "en": "I am happy."
+     },
+     {
+      "he": "אחרי אני, תמיד בא"
+     },
+     {
+      "en": "am."
+     },
+     {
+      "he": "אחרי הוא, היא, וזה, בא"
+     },
+     {
+      "en": "is."
+     },
+     {
+      "he": "ואחרי אתה, אנחנו, והם, בא"
+     },
+     {
+      "en": "are."
+     }
+    ],
+    "examples": [
+     {
+      "en": "I am happy.",
+      "tr": "אני שמח"
+     },
+     {
+      "en": "She is tired.",
+      "tr": "היא עייפה"
+     },
+     {
+      "en": "We are hungry.",
+      "tr": "אנחנו רעבים"
+     },
+     {
+      "en": "You are funny.",
+      "tr": "אתה מצחיק"
+     },
+     {
+      "en": "It is cold.",
+      "tr": "קר"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "pick",
+     "word": "happy"
+    },
+    {
+     "type": "fill",
+     "q": "I ___ happy.",
+     "opts": [
+      "am",
+      "is",
+      "are"
+     ],
+     "a": "am",
+     "full": {
+      "en": "I am happy."
+     },
+     "tr": "אני שמח"
+    },
+    {
+     "type": "listen",
+     "word": "she"
+    },
+    {
+     "type": "fill",
+     "q": "She ___ tired.",
+     "opts": [
+      "am",
+      "is",
+      "are"
+     ],
+     "a": "is",
+     "full": {
+      "en": "She is tired."
+     },
+     "tr": "היא עייפה"
+    },
+    {
+     "type": "order",
+     "words": [
+      "We",
+      "are",
+      "hungry"
+     ],
+     "full": {
+      "en": "We are hungry."
+     },
+     "tr": "אנחנו רעבים"
+    },
+    {
+     "type": "fill",
+     "q": "They ___ cold.",
+     "opts": [
+      "am",
+      "is",
+      "are"
+     ],
+     "a": "are",
+     "full": {
+      "en": "They are cold."
+     },
+     "tr": "קר להם"
+    },
+    {
+     "type": "pick",
+     "word": "cold"
+    },
+    {
+     "type": "fill",
+     "q": "He ___ funny.",
+     "opts": [
+      "am",
+      "is",
+      "are"
+     ],
+     "a": "is",
+     "full": {
+      "en": "He is funny."
+     },
+     "tr": "הוא מצחיק"
+    },
+    {
+     "type": "listen",
+     "word": "we"
+    },
+    {
+     "type": "order",
+     "words": [
+      "It",
+      "is",
+      "hot"
+     ],
+     "full": {
+      "en": "It is hot."
+     },
+     "tr": "חם"
+    },
+    {
+     "type": "fill",
+     "q": "You ___ sad.",
+     "opts": [
+      "am",
+      "is",
+      "are"
+     ],
+     "a": "are",
+     "full": {
+      "en": "You are sad."
+     },
+     "tr": "אתה עצוב"
+    },
+    {
+     "type": "listen",
+     "word": "tired"
+    }
+   ],
+   "level": "basic"
+  },
+  {
+   "id": "b-aan",
+   "title": "a / an ורבים",
+   "icon": "🍎",
+   "intro": {
+    "he": "היום נלמד איך אומרים אחד, ואיך אומרים הרבה!"
+   },
+   "words": [
+    {
+     "id": "apple",
+     "en": "apple",
+     "he": "תפוח",
+     "emoji": "🍎"
+    },
+    {
+     "id": "egg",
+     "en": "egg",
+     "he": "ביצה",
+     "emoji": "🥚"
+    },
+    {
+     "id": "orange",
+     "en": "orange",
+     "he": "תפוז",
+     "emoji": "🍊"
+    },
+    {
+     "id": "umbrella",
+     "en": "umbrella",
+     "he": "מטרייה",
+     "emoji": "☂️"
+    },
+    {
+     "id": "elephant",
+     "en": "elephant",
+     "he": "פיל",
+     "emoji": "🐘"
+    },
+    {
+     "id": "owl",
+     "en": "owl",
+     "he": "ינשוף",
+     "emoji": "🦉"
+    },
+    {
+     "id": "ant",
+     "en": "ant",
+     "he": "נמלה",
+     "emoji": "🐜"
+    },
+    {
+     "id": "book",
+     "en": "book",
+     "he": "ספר",
+     "emoji": "📖"
+    },
+    {
+     "id": "cat",
+     "en": "cat",
+     "he": "חתול",
+     "emoji": "🐱"
+    },
+    {
+     "id": "dog",
+     "en": "dog",
+     "he": "כלב",
+     "emoji": "🐶"
+    },
+    {
+     "id": "ball",
+     "en": "ball",
+     "he": "כדור",
+     "emoji": "⚽"
+    },
+    {
+     "id": "car",
+     "en": "car",
+     "he": "מכונית",
+     "emoji": "🚗"
+    },
+    {
+     "id": "banana",
+     "en": "banana",
+     "he": "בננה",
+     "emoji": "🍌"
+    }
+   ],
+   "grammar": {
+    "title": "a / an / -s",
+    "explain": [
+     {
+      "he": "כשיש דבר אחד, שמים לפניו מילה קטנה."
+     },
+     {
+      "en": "a cat. a ball."
+     },
+     {
+      "he": "אבל כשהמילה מתחילה בצליל פתוח, כמו אָ, אֶ, אִי, אוֹ, אוּ, אומרים"
+     },
+     {
+      "en": "an apple. an egg."
+     },
+     {
+      "he": "וכשיש הרבה, מוסיפים בסוף המילה את הצליל ס."
+     },
+     {
+      "en": "one cat, two cats."
+     }
+    ],
+    "examples": [
+     {
+      "en": "a dog",
+      "tr": "כלב אחד"
+     },
+     {
+      "en": "an apple",
+      "tr": "תפוח אחד"
+     },
+     {
+      "en": "an elephant",
+      "tr": "פיל אחד"
+     },
+     {
+      "en": "two cats",
+      "tr": "שני חתולים"
+     },
+     {
+      "en": "three books",
+      "tr": "שלושה ספרים"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "fill",
+     "q": "___ apple",
+     "opts": [
+      "a",
+      "an"
+     ],
+     "a": "an",
+     "full": {
+      "en": "an apple"
+     },
+     "tr": "תפוח"
+    },
+    {
+     "type": "fill",
+     "q": "___ ball",
+     "opts": [
+      "a",
+      "an"
+     ],
+     "a": "a",
+     "full": {
+      "en": "a ball"
+     },
+     "tr": "כדור"
+    },
+    {
+     "type": "pick",
+     "word": "umbrella"
+    },
+    {
+     "type": "fill",
+     "q": "___ elephant",
+     "opts": [
+      "a",
+      "an"
+     ],
+     "a": "an",
+     "full": {
+      "en": "an elephant"
+     },
+     "tr": "פיל"
+    },
+    {
+     "type": "fill",
+     "q": "two ___",
+     "opts": [
+      "cat",
+      "cats"
+     ],
+     "a": "cats",
+     "full": {
+      "en": "two cats"
+     },
+     "tr": "שני חתולים"
+    },
+    {
+     "type": "listen",
+     "word": "owl"
+    },
+    {
+     "type": "fill",
+     "q": "___ dog",
+     "opts": [
+      "a",
+      "an"
+     ],
+     "a": "a",
+     "full": {
+      "en": "a dog"
+     },
+     "tr": "כלב"
+    },
+    {
+     "type": "order",
+     "words": [
+      "It",
+      "is",
+      "an",
+      "orange"
+     ],
+     "full": {
+      "en": "It is an orange."
+     },
+     "tr": "זה תפוז"
+    },
+    {
+     "type": "fill",
+     "q": "three ___",
+     "opts": [
+      "book",
+      "books"
+     ],
+     "a": "books",
+     "full": {
+      "en": "three books"
+     },
+     "tr": "שלושה ספרים"
+    },
+    {
+     "type": "fill",
+     "q": "___ umbrella",
+     "opts": [
+      "a",
+      "an"
+     ],
+     "a": "an",
+     "full": {
+      "en": "an umbrella"
+     },
+     "tr": "מטרייה"
+    },
+    {
+     "type": "listen",
+     "word": "elephant"
+    },
+    {
+     "type": "fill",
+     "q": "five ___",
+     "opts": [
+      "banana",
+      "bananas"
+     ],
+     "a": "bananas",
+     "full": {
+      "en": "five bananas"
+     },
+     "tr": "חמש בננות"
+    }
+   ],
+   "level": "basic"
+  },
+  {
+   "id": "b-this",
+   "title": "this / that",
+   "icon": "👇",
+   "intro": {
+    "he": "היום נלמד איך מראים על דברים!"
+   },
+   "words": [
+    {
+     "id": "this",
+     "en": "this",
+     "he": "זה, קרוב",
+     "emoji": "👇"
+    },
+    {
+     "id": "that",
+     "en": "that",
+     "he": "זה, רחוק",
+     "emoji": "☝️"
+    },
+    {
+     "id": "these",
+     "en": "these",
+     "he": "אלה, קרובים",
+     "emoji": "👇👇"
+    },
+    {
+     "id": "those",
+     "en": "those",
+     "he": "אלה, רחוקים",
+     "emoji": "☝️☝️"
+    },
+    {
+     "id": "pen",
+     "en": "pen",
+     "he": "עט",
+     "emoji": "🖊️"
+    },
+    {
+     "id": "bag",
+     "en": "bag",
+     "he": "תיק",
+     "emoji": "🎒"
+    },
+    {
+     "id": "chair",
+     "en": "chair",
+     "he": "כיסא",
+     "emoji": "🪑"
+    },
+    {
+     "id": "door",
+     "en": "door",
+     "he": "דלת",
+     "emoji": "🚪"
+    },
+    {
+     "id": "window",
+     "en": "window",
+     "he": "חלון",
+     "emoji": "🪟"
+    },
+    {
+     "id": "flower",
+     "en": "flower",
+     "he": "פרח",
+     "emoji": "🌸"
+    },
+    {
+     "id": "star",
+     "en": "star",
+     "he": "כוכב",
+     "emoji": "⭐"
+    },
+    {
+     "id": "shoe",
+     "en": "shoe",
+     "he": "נעל",
+     "emoji": "👟"
+    },
+    {
+     "id": "box",
+     "en": "box",
+     "he": "קופסה",
+     "emoji": "📦"
+    }
+   ],
+   "grammar": {
+    "title": "this / that / these / those",
+    "explain": [
+     {
+      "he": "כשמשהו קרוב אליי, אומרים"
+     },
+     {
+      "en": "this."
+     },
+     {
+      "he": "וכשהוא רחוק, אומרים"
+     },
+     {
+      "en": "that."
+     },
+     {
+      "he": "כשיש הרבה דברים קרובים, אומרים"
+     },
+     {
+      "en": "these."
+     },
+     {
+      "he": "וכשיש הרבה דברים רחוקים, אומרים"
+     },
+     {
+      "en": "those."
+     }
+    ],
+    "examples": [
+     {
+      "en": "This is a pen.",
+      "tr": "זה עט, קרוב"
+     },
+     {
+      "en": "That is a star.",
+      "tr": "זה כוכב, רחוק"
+     },
+     {
+      "en": "These are shoes.",
+      "tr": "אלה נעליים, קרובות"
+     },
+     {
+      "en": "Those are flowers.",
+      "tr": "אלה פרחים, רחוקים"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "fill",
+     "q": "___ is a pen.",
+     "opts": [
+      "This",
+      "That"
+     ],
+     "a": "This",
+     "full": {
+      "en": "This is a pen."
+     },
+     "tr": "זה עט",
+     "hint": "קרוב 👇"
+    },
+    {
+     "type": "fill",
+     "q": "___ is a star.",
+     "opts": [
+      "This",
+      "That"
+     ],
+     "a": "That",
+     "full": {
+      "en": "That is a star."
+     },
+     "tr": "זה כוכב",
+     "hint": "רחוק ☝️"
+    },
+    {
+     "type": "pick",
+     "word": "chair"
+    },
+    {
+     "type": "fill",
+     "q": "___ are shoes.",
+     "opts": [
+      "These",
+      "Those"
+     ],
+     "a": "These",
+     "full": {
+      "en": "These are shoes."
+     },
+     "tr": "אלה נעליים",
+     "hint": "הרבה, קרוב 👇"
+    },
+    {
+     "type": "fill",
+     "q": "___ are flowers.",
+     "opts": [
+      "These",
+      "Those"
+     ],
+     "a": "Those",
+     "full": {
+      "en": "Those are flowers."
+     },
+     "tr": "אלה פרחים",
+     "hint": "הרבה, רחוק ☝️"
+    },
+    {
+     "type": "listen",
+     "word": "door"
+    },
+    {
+     "type": "fill",
+     "q": "These ___ books.",
+     "opts": [
+      "is",
+      "are"
+     ],
+     "a": "are",
+     "full": {
+      "en": "These are books."
+     },
+     "tr": "אלה ספרים"
+    },
+    {
+     "type": "fill",
+     "q": "This ___ a box.",
+     "opts": [
+      "is",
+      "are"
+     ],
+     "a": "is",
+     "full": {
+      "en": "This is a box."
+     },
+     "tr": "זאת קופסה"
+    },
+    {
+     "type": "order",
+     "words": [
+      "That",
+      "is",
+      "a",
+      "window"
+     ],
+     "full": {
+      "en": "That is a window."
+     },
+     "tr": "זה חלון"
+    },
+    {
+     "type": "listen",
+     "word": "window"
+    },
+    {
+     "type": "order",
+     "words": [
+      "These",
+      "are",
+      "chairs"
+     ],
+     "full": {
+      "en": "These are chairs."
+     },
+     "tr": "אלה כיסאות"
+    },
+    {
+     "type": "pick",
+     "word": "bag"
+    }
+   ],
+   "level": "basic"
+  },
+  {
+   "id": "b-have",
+   "title": "have / has",
+   "icon": "🐰",
+   "intro": {
+    "he": "היום נלמד להגיד מה יש לנו!"
+   },
+   "words": [
+    {
+     "id": "pet",
+     "en": "pet",
+     "he": "חיית מחמד",
+     "emoji": "🐾"
+    },
+    {
+     "id": "rabbit",
+     "en": "rabbit",
+     "he": "ארנב",
+     "emoji": "🐰"
+    },
+    {
+     "id": "hamster",
+     "en": "hamster",
+     "he": "אוגר",
+     "emoji": "🐹"
+    },
+    {
+     "id": "parrot",
+     "en": "parrot",
+     "he": "תוכי",
+     "emoji": "🦜"
+    },
+    {
+     "id": "turtle",
+     "en": "turtle",
+     "he": "צב",
+     "emoji": "🐢"
+    },
+    {
+     "id": "bike",
+     "en": "bike",
+     "he": "אופניים",
+     "emoji": "🚲"
+    },
+    {
+     "id": "kite",
+     "en": "kite",
+     "he": "עפיפון",
+     "emoji": "🪁"
+    },
+    {
+     "id": "doll",
+     "en": "doll",
+     "he": "בובה",
+     "emoji": "🪆"
+    },
+    {
+     "id": "robot",
+     "en": "robot",
+     "he": "רובוט",
+     "emoji": "🤖"
+    },
+    {
+     "id": "sister",
+     "en": "sister",
+     "he": "אחות",
+     "emoji": "👧"
+    },
+    {
+     "id": "brother",
+     "en": "brother",
+     "he": "אח",
+     "emoji": "👦"
+    },
+    {
+     "id": "friend",
+     "en": "friend",
+     "he": "חבר",
+     "emoji": "🤝"
+    },
+    {
+     "id": "house",
+     "en": "house",
+     "he": "בית",
+     "emoji": "🏠"
+    }
+   ],
+   "grammar": {
+    "title": "have / has",
+    "explain": [
+     {
+      "he": "כדי להגיד שיש לי משהו, אומרים"
+     },
+     {
+      "en": "I have a bike."
+     },
+     {
+      "he": "עם אני, אתה, אנחנו, והם, אומרים"
+     },
+     {
+      "en": "have."
+     },
+     {
+      "he": "אבל עם הוא והיא, אומרים"
+     },
+     {
+      "en": "has."
+     },
+     {
+      "en": "She has a rabbit."
+     }
+    ],
+    "examples": [
+     {
+      "en": "I have a bike.",
+      "tr": "יש לי אופניים"
+     },
+     {
+      "en": "She has a rabbit.",
+      "tr": "יש לה ארנב"
+     },
+     {
+      "en": "He has a parrot.",
+      "tr": "יש לו תוכי"
+     },
+     {
+      "en": "We have a kite.",
+      "tr": "יש לנו עפיפון"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "fill",
+     "q": "I ___ a dog.",
+     "opts": [
+      "have",
+      "has"
+     ],
+     "a": "have",
+     "full": {
+      "en": "I have a dog."
+     },
+     "tr": "יש לי כלב"
+    },
+    {
+     "type": "fill",
+     "q": "She ___ a doll.",
+     "opts": [
+      "have",
+      "has"
+     ],
+     "a": "has",
+     "full": {
+      "en": "She has a doll."
+     },
+     "tr": "יש לה בובה"
+    },
+    {
+     "type": "pick",
+     "word": "parrot"
+    },
+    {
+     "type": "fill",
+     "q": "He ___ a robot.",
+     "opts": [
+      "have",
+      "has"
+     ],
+     "a": "has",
+     "full": {
+      "en": "He has a robot."
+     },
+     "tr": "יש לו רובוט"
+    },
+    {
+     "type": "fill",
+     "q": "They ___ a kite.",
+     "opts": [
+      "have",
+      "has"
+     ],
+     "a": "have",
+     "full": {
+      "en": "They have a kite."
+     },
+     "tr": "יש להם עפיפון"
+    },
+    {
+     "type": "listen",
+     "word": "hamster"
+    },
+    {
+     "type": "order",
+     "words": [
+      "I",
+      "have",
+      "a",
+      "rabbit"
+     ],
+     "full": {
+      "en": "I have a rabbit."
+     },
+     "tr": "יש לי ארנב"
+    },
+    {
+     "type": "fill",
+     "q": "We ___ two turtles.",
+     "opts": [
+      "have",
+      "has"
+     ],
+     "a": "have",
+     "full": {
+      "en": "We have two turtles."
+     },
+     "tr": "יש לנו שני צבים"
+    },
+    {
+     "type": "fill",
+     "q": "My sister ___ a bike.",
+     "opts": [
+      "have",
+      "has"
+     ],
+     "a": "has",
+     "full": {
+      "en": "My sister has a bike."
+     },
+     "tr": "לאחותי יש אופניים"
+    },
+    {
+     "type": "order",
+     "words": [
+      "He",
+      "has",
+      "a",
+      "brother"
+     ],
+     "full": {
+      "en": "He has a brother."
+     },
+     "tr": "יש לו אח"
+    },
+    {
+     "type": "listen",
+     "word": "kite"
+    },
+    {
+     "type": "pick",
+     "word": "turtle"
+    }
+   ],
+   "level": "basic"
+  },
+  {
+   "id": "b-adj",
+   "title": "גדול, קטן, מהיר",
+   "icon": "🦒",
+   "intro": {
+    "he": "היום נלמד מילים שמתארות דברים!"
+   },
+   "words": [
+    {
+     "id": "big",
+     "en": "big",
+     "he": "גדול",
+     "emoji": "🐘"
+    },
+    {
+     "id": "small",
+     "en": "small",
+     "he": "קטן",
+     "emoji": "🐭"
+    },
+    {
+     "id": "long",
+     "en": "long",
+     "he": "ארוך",
+     "emoji": "🐍"
+    },
+    {
+     "id": "short",
+     "en": "short",
+     "he": "קצר",
+     "emoji": "📏"
+    },
+    {
+     "id": "tall",
+     "en": "tall",
+     "he": "גבוה",
+     "emoji": "🦒"
+    },
+    {
+     "id": "fast",
+     "en": "fast",
+     "he": "מהיר",
+     "emoji": "🚀"
+    },
+    {
+     "id": "slow",
+     "en": "slow",
+     "he": "איטי",
+     "emoji": "🐢"
+    },
+    {
+     "id": "new",
+     "en": "new",
+     "he": "חדש",
+     "emoji": "✨"
+    },
+    {
+     "id": "old",
+     "en": "old",
+     "he": "ישן",
+     "emoji": "🏚️"
+    },
+    {
+     "id": "clean",
+     "en": "clean",
+     "he": "נקי",
+     "emoji": "🧼"
+    },
+    {
+     "id": "dirty",
+     "en": "dirty",
+     "he": "מלוכלך",
+     "emoji": "🐷"
+    },
+    {
+     "id": "beautiful",
+     "en": "beautiful",
+     "he": "יפה",
+     "emoji": "🌺"
+    },
+    {
+     "id": "frog",
+     "en": "frog",
+     "he": "צפרדע",
+     "emoji": "🐸"
+    }
+   ],
+   "grammar": {
+    "title": "a big red ball",
+    "explain": [
+     {
+      "he": "בעברית אומרים כדור גדול: קודם הדבר, ואחר כך התיאור. באנגלית זה הפוך! קודם התיאור, ואחר כך הדבר."
+     },
+     {
+      "en": "a big ball."
+     },
+     {
+      "he": "ואם יש גם צבע, הצבע בא ממש לפני הדבר."
+     },
+     {
+      "en": "a big red ball."
+     }
+    ],
+    "examples": [
+     {
+      "en": "a big dog",
+      "tr": "כלב גדול"
+     },
+     {
+      "en": "a small cat",
+      "tr": "חתול קטן"
+     },
+     {
+      "en": "a fast red car",
+      "tr": "מכונית אדומה מהירה"
+     },
+     {
+      "en": "The giraffe is tall.",
+      "tr": "הג'ירפה גבוהה"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "order",
+     "words": [
+      "a",
+      "big",
+      "ball"
+     ],
+     "full": {
+      "en": "a big ball"
+     },
+     "tr": "כדור גדול"
+    },
+    {
+     "type": "pick",
+     "word": "long"
+    },
+    {
+     "type": "fill",
+     "q": "The turtle is ___.",
+     "opts": [
+      "fast",
+      "slow"
+     ],
+     "a": "slow",
+     "full": {
+      "en": "The turtle is slow."
+     },
+     "tr": "הצב איטי"
+    },
+    {
+     "type": "order",
+     "words": [
+      "a",
+      "small",
+      "green",
+      "frog"
+     ],
+     "full": {
+      "en": "a small green frog"
+     },
+     "tr": "צפרדע ירוקה קטנה"
+    },
+    {
+     "type": "fill",
+     "q": "The giraffe is ___.",
+     "opts": [
+      "tall",
+      "short"
+     ],
+     "a": "tall",
+     "full": {
+      "en": "The giraffe is tall."
+     },
+     "tr": "הג'ירפה גבוהה"
+    },
+    {
+     "type": "listen",
+     "word": "old"
+    },
+    {
+     "type": "fill",
+     "q": "A mouse is ___.",
+     "opts": [
+      "big",
+      "small"
+     ],
+     "a": "small",
+     "full": {
+      "en": "A mouse is small."
+     },
+     "tr": "עכבר קטן"
+    },
+    {
+     "type": "order",
+     "words": [
+      "a",
+      "fast",
+      "red",
+      "car"
+     ],
+     "full": {
+      "en": "a fast red car"
+     },
+     "tr": "מכונית אדומה מהירה"
+    },
+    {
+     "type": "fill",
+     "q": "The rocket is ___.",
+     "opts": [
+      "fast",
+      "slow"
+     ],
+     "a": "fast",
+     "full": {
+      "en": "The rocket is fast."
+     },
+     "tr": "הטיל מהיר"
+    },
+    {
+     "type": "listen",
+     "word": "clean"
+    },
+    {
+     "type": "pick",
+     "word": "tall"
+    },
+    {
+     "type": "fill",
+     "q": "The pig is ___.",
+     "opts": [
+      "clean",
+      "dirty"
+     ],
+     "a": "dirty",
+     "full": {
+      "en": "The pig is dirty."
+     },
+     "tr": "החזיר מלוכלך"
+    }
+   ],
+   "level": "basic"
+  },
+  {
+   "id": "b-where",
+   "title": "in / on / under",
+   "icon": "📦",
+   "intro": {
+    "he": "היום נלמד להגיד איפה דברים נמצאים!"
+   },
+   "words": [
+    {
+     "id": "in",
+     "en": "in",
+     "he": "בתוך",
+     "emoji": "📥"
+    },
+    {
+     "id": "on",
+     "en": "on",
+     "he": "על",
+     "emoji": "🔝"
+    },
+    {
+     "id": "under",
+     "en": "under",
+     "he": "מתחת",
+     "emoji": "⬇️"
+    },
+    {
+     "id": "next",
+     "en": "next to",
+     "he": "ליד",
+     "emoji": "↔️"
+    },
+    {
+     "id": "bed",
+     "en": "bed",
+     "he": "מיטה",
+     "emoji": "🛏️"
+    },
+    {
+     "id": "sofa",
+     "en": "sofa",
+     "he": "ספה",
+     "emoji": "🛋️"
+    },
+    {
+     "id": "cup",
+     "en": "cup",
+     "he": "כוס",
+     "emoji": "☕"
+    },
+    {
+     "id": "box",
+     "en": "box",
+     "he": "קופסה",
+     "emoji": "📦"
+    },
+    {
+     "id": "bag",
+     "en": "bag",
+     "he": "תיק",
+     "emoji": "🎒"
+    },
+    {
+     "id": "tree",
+     "en": "tree",
+     "he": "עץ",
+     "emoji": "🌳"
+    },
+    {
+     "id": "mouse",
+     "en": "mouse",
+     "he": "עכבר",
+     "emoji": "🐭"
+    },
+    {
+     "id": "bird",
+     "en": "bird",
+     "he": "ציפור",
+     "emoji": "🐦"
+    },
+    {
+     "id": "chair",
+     "en": "chair",
+     "he": "כיסא",
+     "emoji": "🪑"
+    }
+   ],
+   "grammar": {
+    "title": "in / on / under / next to",
+    "explain": [
+     {
+      "he": "כדי להגיד איפה משהו נמצא, משתמשים במילים קטנות."
+     },
+     {
+      "en": "in."
+     },
+     {
+      "he": "זה בתוך."
+     },
+     {
+      "en": "on."
+     },
+     {
+      "he": "זה על."
+     },
+     {
+      "en": "under."
+     },
+     {
+      "he": "זה מתחת."
+     },
+     {
+      "en": "next to."
+     },
+     {
+      "he": "זה ליד."
+     }
+    ],
+    "examples": [
+     {
+      "en": "The cat is in the box.",
+      "tr": "החתול בתוך הקופסה"
+     },
+     {
+      "en": "The ball is under the bed.",
+      "tr": "הכדור מתחת למיטה"
+     },
+     {
+      "en": "The cup is on the chair.",
+      "tr": "הכוס על הכיסא"
+     },
+     {
+      "en": "The mouse is next to the tree.",
+      "tr": "העכבר ליד העץ"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "fill",
+     "q": "The cat is ___ the box.",
+     "opts": [
+      "in",
+      "on",
+      "under"
+     ],
+     "a": "in",
+     "full": {
+      "en": "The cat is in the box."
+     },
+     "tr": "החתול בתוך הקופסה",
+     "hint": "בתוך"
+    },
+    {
+     "type": "fill",
+     "q": "The ball is ___ the bed.",
+     "opts": [
+      "in",
+      "on",
+      "under"
+     ],
+     "a": "under",
+     "full": {
+      "en": "The ball is under the bed."
+     },
+     "tr": "הכדור מתחת למיטה",
+     "hint": "מתחת"
+    },
+    {
+     "type": "listen",
+     "word": "under"
+    },
+    {
+     "type": "fill",
+     "q": "The cup is ___ the chair.",
+     "opts": [
+      "in",
+      "on",
+      "under"
+     ],
+     "a": "on",
+     "full": {
+      "en": "The cup is on the chair."
+     },
+     "tr": "הכוס על הכיסא",
+     "hint": "על"
+    },
+    {
+     "type": "pick",
+     "word": "sofa"
+    },
+    {
+     "type": "order",
+     "words": [
+      "The",
+      "book",
+      "is",
+      "in",
+      "the",
+      "bag"
+     ],
+     "full": {
+      "en": "The book is in the bag."
+     },
+     "tr": "הספר בתוך התיק"
+    },
+    {
+     "type": "fill",
+     "q": "The dog is ___ the tree.",
+     "opts": [
+      "next to",
+      "in",
+      "under"
+     ],
+     "a": "next to",
+     "full": {
+      "en": "The dog is next to the tree."
+     },
+     "tr": "הכלב ליד העץ",
+     "hint": "ליד"
+    },
+    {
+     "type": "listen",
+     "word": "sofa"
+    },
+    {
+     "type": "order",
+     "words": [
+      "The",
+      "cat",
+      "is",
+      "on",
+      "the",
+      "sofa"
+     ],
+     "full": {
+      "en": "The cat is on the sofa."
+     },
+     "tr": "החתול על הספה"
+    },
+    {
+     "type": "fill",
+     "q": "The bird is ___ the tree.",
+     "opts": [
+      "in",
+      "under"
+     ],
+     "a": "in",
+     "full": {
+      "en": "The bird is in the tree."
+     },
+     "tr": "הציפור בתוך העץ",
+     "hint": "בתוך"
+    },
+    {
+     "type": "pick",
+     "word": "cup"
+    },
+    {
+     "type": "order",
+     "words": [
+      "The",
+      "mouse",
+      "is",
+      "under",
+      "the",
+      "chair"
+     ],
+     "full": {
+      "en": "The mouse is under the chair."
+     },
+     "tr": "העכבר מתחת לכיסא"
+    }
+   ],
+   "level": "basic"
+  },
+  {
+   "id": "b-can",
+   "title": "can / can't",
+   "icon": "🏊",
+   "intro": {
+    "he": "היום נלמד להגיד מה אנחנו יודעים לעשות!"
+   },
+   "words": [
+    {
+     "id": "swim",
+     "en": "swim",
+     "he": "לשחות",
+     "emoji": "🏊"
+    },
+    {
+     "id": "fly",
+     "en": "fly",
+     "he": "לעוף",
+     "emoji": "🕊️"
+    },
+    {
+     "id": "run",
+     "en": "run",
+     "he": "לרוץ",
+     "emoji": "🏃"
+    },
+    {
+     "id": "jump",
+     "en": "jump",
+     "he": "לקפוץ",
+     "emoji": "🦘"
+    },
+    {
+     "id": "climb",
+     "en": "climb",
+     "he": "לטפס",
+     "emoji": "🧗"
+    },
+    {
+     "id": "read",
+     "en": "read",
+     "he": "לקרוא",
+     "emoji": "📖"
+    },
+    {
+     "id": "write",
+     "en": "write",
+     "he": "לכתוב",
+     "emoji": "✍️"
+    },
+    {
+     "id": "sing",
+     "en": "sing",
+     "he": "לשיר",
+     "emoji": "🎤"
+    },
+    {
+     "id": "dance",
+     "en": "dance",
+     "he": "לרקוד",
+     "emoji": "💃"
+    },
+    {
+     "id": "cook",
+     "en": "cook",
+     "he": "לבשל",
+     "emoji": "🍳"
+    },
+    {
+     "id": "walk",
+     "en": "walk",
+     "he": "ללכת",
+     "emoji": "🚶"
+    },
+    {
+     "id": "ride",
+     "en": "ride a bike",
+     "he": "לרכוב על אופניים",
+     "emoji": "🚴"
+    },
+    {
+     "id": "draw",
+     "en": "draw",
+     "he": "לצייר",
+     "emoji": "🎨"
+    }
+   ],
+   "grammar": {
+    "title": "can / can't",
+    "explain": [
+     {
+      "he": "כדי להגיד שאני יודע לעשות משהו, אומרים"
+     },
+     {
+      "en": "I can swim."
+     },
+     {
+      "he": "וכשלא יודעים, אומרים"
+     },
+     {
+      "en": "I can't fly."
+     },
+     {
+      "he": "אחרי המילה הזאת, הפעולה באה בלי שום תוספת. גם עם הוא והיא."
+     },
+     {
+      "en": "She can sing."
+     }
+    ],
+    "examples": [
+     {
+      "en": "I can swim.",
+      "tr": "אני יודע לשחות"
+     },
+     {
+      "en": "A bird can fly.",
+      "tr": "ציפור יכולה לעוף"
+     },
+     {
+      "en": "A fish can't walk.",
+      "tr": "דג לא יכול ללכת"
+     },
+     {
+      "en": "He can ride a bike.",
+      "tr": "הוא יודע לרכוב על אופניים"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "fill",
+     "q": "A bird ___ fly.",
+     "opts": [
+      "can",
+      "can't"
+     ],
+     "a": "can",
+     "full": {
+      "en": "A bird can fly."
+     },
+     "tr": "ציפור יכולה לעוף"
+    },
+    {
+     "type": "pick",
+     "word": "climb"
+    },
+    {
+     "type": "fill",
+     "q": "A fish ___ walk.",
+     "opts": [
+      "can",
+      "can't"
+     ],
+     "a": "can't",
+     "full": {
+      "en": "A fish can't walk."
+     },
+     "tr": "דג לא יכול ללכת"
+    },
+    {
+     "type": "listen",
+     "word": "cook"
+    },
+    {
+     "type": "fill",
+     "q": "A monkey ___ climb.",
+     "opts": [
+      "can",
+      "can't"
+     ],
+     "a": "can",
+     "full": {
+      "en": "A monkey can climb."
+     },
+     "tr": "קוף יכול לטפס"
+    },
+    {
+     "type": "order",
+     "words": [
+      "I",
+      "can",
+      "swim"
+     ],
+     "full": {
+      "en": "I can swim."
+     },
+     "tr": "אני יודע לשחות"
+    },
+    {
+     "type": "fill",
+     "q": "She can ___.",
+     "opts": [
+      "sing",
+      "sings"
+     ],
+     "a": "sing",
+     "full": {
+      "en": "She can sing."
+     },
+     "tr": "היא יודעת לשיר"
+    },
+    {
+     "type": "fill",
+     "q": "A dog ___ read.",
+     "opts": [
+      "can",
+      "can't"
+     ],
+     "a": "can't",
+     "full": {
+      "en": "A dog can't read."
+     },
+     "tr": "כלב לא יודע לקרוא"
+    },
+    {
+     "type": "order",
+     "words": [
+      "Can",
+      "you",
+      "dance"
+     ],
+     "full": {
+      "en": "Can you dance?"
+     },
+     "tr": "אתה יודע לרקוד?"
+    },
+    {
+     "type": "listen",
+     "word": "write"
+    },
+    {
+     "type": "pick",
+     "word": "fly"
+    },
+    {
+     "type": "fill",
+     "q": "A cat ___ fly.",
+     "opts": [
+      "can",
+      "can't"
+     ],
+     "a": "can't",
+     "full": {
+      "en": "A cat can't fly."
+     },
+     "tr": "חתול לא יכול לעוף"
+    }
+   ],
+   "level": "basic"
+  },
+  {
+   "id": "b-questions",
+   "title": "What? Where? Who?",
+   "icon": "❓",
+   "intro": {
+    "he": "היום נלמד לשאול שאלות!"
+   },
+   "words": [
+    {
+     "id": "what",
+     "en": "what",
+     "he": "מה",
+     "emoji": "❓"
+    },
+    {
+     "id": "where",
+     "en": "where",
+     "he": "איפה",
+     "emoji": "📍"
+    },
+    {
+     "id": "who",
+     "en": "who",
+     "he": "מי",
+     "emoji": "🧑"
+    },
+    {
+     "id": "howmany",
+     "en": "how many",
+     "he": "כמה",
+     "emoji": "🔢"
+    },
+    {
+     "id": "howold",
+     "en": "how old",
+     "he": "בן כמה",
+     "emoji": "🎂"
+    },
+    {
+     "id": "name",
+     "en": "name",
+     "he": "שם",
+     "emoji": "🏷️"
+    },
+    {
+     "id": "home",
+     "en": "home",
+     "he": "בית",
+     "emoji": "🏠"
+    },
+    {
+     "id": "school",
+     "en": "school",
+     "he": "בית ספר",
+     "emoji": "🏫"
+    },
+    {
+     "id": "teacher",
+     "en": "teacher",
+     "he": "מורה",
+     "emoji": "🧑‍🏫"
+    },
+    {
+     "id": "park",
+     "en": "park",
+     "he": "פארק",
+     "emoji": "🌳"
+    },
+    {
+     "id": "my",
+     "en": "my",
+     "he": "שלי",
+     "emoji": "🙋"
+    },
+    {
+     "id": "your",
+     "en": "your",
+     "he": "שלך",
+     "emoji": "👉"
+    }
+   ],
+   "grammar": {
+    "title": "what / where / who / how",
+    "explain": [
+     {
+      "he": "כדי לשאול מה, אומרים"
+     },
+     {
+      "en": "What?"
+     },
+     {
+      "he": "כדי לשאול איפה, אומרים"
+     },
+     {
+      "en": "Where?"
+     },
+     {
+      "he": "כדי לשאול מי, אומרים"
+     },
+     {
+      "en": "Who?"
+     },
+     {
+      "he": "כדי לשאול כמה, אומרים"
+     },
+     {
+      "en": "How many?"
+     },
+     {
+      "he": "וכדי לשאול מישהו בן כמה הוא, אומרים"
+     },
+     {
+      "en": "How old are you?"
+     }
+    ],
+    "examples": [
+     {
+      "en": "What is your name?",
+      "tr": "מה השם שלך?"
+     },
+     {
+      "en": "Where is the ball?",
+      "tr": "איפה הכדור?"
+     },
+     {
+      "en": "Who is she?",
+      "tr": "מי היא?"
+     },
+     {
+      "en": "How many cats?",
+      "tr": "כמה חתולים?"
+     },
+     {
+      "en": "How old are you?",
+      "tr": "בן כמה אתה?"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "fill",
+     "q": "___ is your name?",
+     "opts": [
+      "What",
+      "Where",
+      "Who"
+     ],
+     "a": "What",
+     "full": {
+      "en": "What is your name?"
+     },
+     "tr": "מה השם שלך?"
+    },
+    {
+     "type": "fill",
+     "q": "___ is the dog?",
+     "opts": [
+      "What",
+      "Where",
+      "Who"
+     ],
+     "a": "Where",
+     "full": {
+      "en": "Where is the dog?"
+     },
+     "tr": "איפה הכלב?",
+     "hint": "איפה"
+    },
+    {
+     "type": "listen",
+     "word": "where"
+    },
+    {
+     "type": "fill",
+     "q": "___ is your teacher?",
+     "opts": [
+      "What",
+      "Where",
+      "Who"
+     ],
+     "a": "Who",
+     "full": {
+      "en": "Who is your teacher?"
+     },
+     "tr": "מי המורה שלך?",
+     "hint": "מי"
+    },
+    {
+     "type": "order",
+     "words": [
+      "What",
+      "is",
+      "this"
+     ],
+     "full": {
+      "en": "What is this?"
+     },
+     "tr": "מה זה?"
+    },
+    {
+     "type": "fill",
+     "q": "___ old are you?",
+     "opts": [
+      "How",
+      "What"
+     ],
+     "a": "How",
+     "full": {
+      "en": "How old are you?"
+     },
+     "tr": "בן כמה אתה?"
+    },
+    {
+     "type": "pick",
+     "word": "school"
+    },
+    {
+     "type": "fill",
+     "q": "How ___ apples?",
+     "opts": [
+      "many",
+      "old"
+     ],
+     "a": "many",
+     "full": {
+      "en": "How many apples?"
+     },
+     "tr": "כמה תפוחים?"
+    },
+    {
+     "type": "order",
+     "words": [
+      "Where",
+      "is",
+      "my",
+      "bag"
+     ],
+     "full": {
+      "en": "Where is my bag?"
+     },
+     "tr": "איפה התיק שלי?"
+    },
+    {
+     "type": "listen",
+     "word": "who"
+    },
+    {
+     "type": "order",
+     "words": [
+      "How",
+      "old",
+      "are",
+      "you"
+     ],
+     "full": {
+      "en": "How old are you?"
+     },
+     "tr": "בן כמה אתה?"
+    },
+    {
+     "type": "pick",
+     "word": "home"
+    }
+   ],
+   "level": "basic"
+  },
+  {
+   "id": "b-days",
+   "title": "ימי השבוע",
+   "icon": "📅",
+   "intro": {
+    "he": "היום נלמד את ימי השבוע!"
+   },
+   "words": [
+    {
+     "id": "sun",
+     "en": "Sunday",
+     "he": "יום ראשון",
+     "show": "Sunday"
+    },
+    {
+     "id": "mon",
+     "en": "Monday",
+     "he": "יום שני",
+     "show": "Monday"
+    },
+    {
+     "id": "tue",
+     "en": "Tuesday",
+     "he": "יום שלישי",
+     "show": "Tuesday"
+    },
+    {
+     "id": "wed",
+     "en": "Wednesday",
+     "he": "יום רביעי",
+     "show": "Wednesday"
+    },
+    {
+     "id": "thu",
+     "en": "Thursday",
+     "he": "יום חמישי",
+     "show": "Thursday"
+    },
+    {
+     "id": "fri",
+     "en": "Friday",
+     "he": "יום שישי",
+     "show": "Friday"
+    },
+    {
+     "id": "sat",
+     "en": "Saturday",
+     "he": "שבת",
+     "show": "Saturday"
+    },
+    {
+     "id": "today",
+     "en": "today",
+     "he": "היום",
+     "emoji": "📍"
+    },
+    {
+     "id": "tomorrow",
+     "en": "tomorrow",
+     "he": "מחר",
+     "emoji": "➡️"
+    },
+    {
+     "id": "yesterday",
+     "en": "yesterday",
+     "he": "אתמול",
+     "emoji": "⬅️"
+    },
+    {
+     "id": "week",
+     "en": "week",
+     "he": "שבוע",
+     "emoji": "📅"
+    }
+   ],
+   "grammar": {
+    "title": "Sunday, Monday…",
+    "explain": [
+     {
+      "he": "באנגלית, ימי השבוע הם שמות, ולכן כותבים אותם תמיד עם אות גדולה בהתחלה. וכולם נגמרים באותה מילה."
+     },
+     {
+      "en": "day!"
+     },
+     {
+      "he": "אצלנו בישראל, השבוע מתחיל ביום ראשון."
+     },
+     {
+      "en": "Sunday."
+     }
+    ],
+    "examples": [
+     {
+      "en": "Today is Sunday.",
+      "tr": "היום יום ראשון"
+     },
+     {
+      "en": "Tomorrow is Monday.",
+      "tr": "מחר יום שני"
+     },
+     {
+      "en": "I go to school on Monday.",
+      "tr": "אני הולך לבית הספר ביום שני"
+     },
+     {
+      "en": "On Saturday we play.",
+      "tr": "בשבת אנחנו משחקים"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "listen",
+     "word": "wed"
+    },
+    {
+     "type": "fill",
+     "q": "Sunday, Monday, ___",
+     "opts": [
+      "Tuesday",
+      "Friday"
+     ],
+     "a": "Tuesday",
+     "full": {
+      "en": "Sunday, Monday, Tuesday"
+     },
+     "tr": "ראשון, שני, שלישי"
+    },
+    {
+     "type": "listen",
+     "word": "thu"
+    },
+    {
+     "type": "fill",
+     "q": "Today is Sunday. Tomorrow is ___.",
+     "opts": [
+      "Monday",
+      "Saturday"
+     ],
+     "a": "Monday",
+     "full": {
+      "en": "Today is Sunday. Tomorrow is Monday."
+     },
+     "tr": "היום ראשון, מחר שני"
+    },
+    {
+     "type": "order",
+     "words": [
+      "Today",
+      "is",
+      "Friday"
+     ],
+     "full": {
+      "en": "Today is Friday."
+     },
+     "tr": "היום יום שישי"
+    },
+    {
+     "type": "listen",
+     "word": "tomorrow"
+    },
+    {
+     "type": "fill",
+     "q": "I go to school ___ Monday.",
+     "opts": [
+      "on",
+      "in"
+     ],
+     "a": "on",
+     "full": {
+      "en": "I go to school on Monday."
+     },
+     "tr": "אני הולך לבית הספר ביום שני"
+    },
+    {
+     "type": "listen",
+     "word": "sat"
+    },
+    {
+     "type": "fill",
+     "q": "There are seven ___ in a week.",
+     "opts": [
+      "day",
+      "days"
+     ],
+     "a": "days",
+     "full": {
+      "en": "There are seven days in a week."
+     },
+     "tr": "יש שבעה ימים בשבוע"
+    },
+    {
+     "type": "listen",
+     "word": "yesterday"
+    },
+    {
+     "type": "fill",
+     "q": "Thursday, Friday, ___",
+     "opts": [
+      "Saturday",
+      "Sunday"
+     ],
+     "a": "Saturday",
+     "full": {
+      "en": "Thursday, Friday, Saturday"
+     },
+     "tr": "חמישי, שישי, שבת"
+    }
+   ],
+   "level": "basic"
+  },
+  {
+   "id": "b-numbers",
+   "title": "מספרים עד 100",
+   "icon": "💯",
+   "intro": {
+    "he": "היום נספור עד מאה!"
+   },
+   "words": [
+    {
+     "id": "20",
+     "en": "twenty",
+     "he": "עשרים",
+     "show": "20"
+    },
+    {
+     "id": "30",
+     "en": "thirty",
+     "he": "שלושים",
+     "show": "30"
+    },
+    {
+     "id": "40",
+     "en": "forty",
+     "he": "ארבעים",
+     "show": "40"
+    },
+    {
+     "id": "50",
+     "en": "fifty",
+     "he": "חמישים",
+     "show": "50"
+    },
+    {
+     "id": "60",
+     "en": "sixty",
+     "he": "שישים",
+     "show": "60"
+    },
+    {
+     "id": "70",
+     "en": "seventy",
+     "he": "שבעים",
+     "show": "70"
+    },
+    {
+     "id": "80",
+     "en": "eighty",
+     "he": "שמונים",
+     "show": "80"
+    },
+    {
+     "id": "90",
+     "en": "ninety",
+     "he": "תשעים",
+     "show": "90"
+    },
+    {
+     "id": "100",
+     "en": "one hundred",
+     "he": "מאה",
+     "show": "100"
+    },
+    {
+     "id": "21",
+     "en": "twenty-one",
+     "he": "עשרים ואחת",
+     "show": "21"
+    },
+    {
+     "id": "35",
+     "en": "thirty-five",
+     "he": "שלושים וחמש",
+     "show": "35"
+    },
+    {
+     "id": "14",
+     "en": "fourteen",
+     "he": "ארבע עשרה",
+     "show": "14"
+    }
+   ],
+   "grammar": {
+    "title": "-ty / -teen",
+    "explain": [
+     {
+      "he": "כדי לספור בעשרות, מוסיפים בסוף את הצליל טי."
+     },
+     {
+      "en": "sixty, seventy, eighty."
+     },
+     {
+      "he": "שימו לב! זה דומה למספרים מאחת עשרה עד תשע עשרה, שנגמרים בצליל טין."
+     },
+     {
+      "en": "fourteen, forty."
+     },
+     {
+      "he": "ואם יש עוד יחידות, פשוט מחברים."
+     },
+     {
+      "en": "twenty-one, twenty-two."
+     }
+    ],
+    "examples": [
+     {
+      "en": "I am nine years old.",
+      "tr": "אני בן תשע"
+     },
+     {
+      "en": "My grandpa is seventy.",
+      "tr": "סבא שלי בן שבעים"
+     },
+     {
+      "en": "I have fifty stickers.",
+      "tr": "יש לי חמישים מדבקות"
+     },
+     {
+      "en": "One hundred is a big number.",
+      "tr": "מאה זה מספר גדול"
+     }
+    ]
+   },
+   "exercises": [
+    {
+     "type": "listen",
+     "word": "40"
+    },
+    {
+     "type": "fill",
+     "q": "10, 20, 30, ___",
+     "opts": [
+      "forty",
+      "fourteen"
+     ],
+     "a": "forty",
+     "full": {
+      "en": "10, 20, 30, forty"
+     },
+     "tr": "עשר, עשרים, שלושים, ארבעים"
+    },
+    {
+     "type": "listen",
+     "word": "14"
+    },
+    {
+     "type": "fill",
+     "q": "twenty + twenty = ___",
+     "opts": [
+      "forty",
+      "fourteen"
+     ],
+     "a": "forty",
+     "full": {
+      "en": "twenty + twenty = forty"
+     },
+     "tr": "עשרים ועוד עשרים"
+    },
+    {
+     "type": "listen",
+     "word": "90"
+    },
+    {
+     "type": "fill",
+     "q": "fifty + fifty = ___",
+     "opts": [
+      "one hundred",
+      "sixty"
+     ],
+     "a": "one hundred",
+     "full": {
+      "en": "fifty + fifty = one hundred"
+     },
+     "tr": "חמישים ועוד חמישים"
+    },
+    {
+     "type": "order",
+     "words": [
+      "I",
+      "am",
+      "nine",
+      "years",
+      "old"
+     ],
+     "full": {
+      "en": "I am nine years old."
+     },
+     "tr": "אני בן תשע"
+    },
+    {
+     "type": "listen",
+     "word": "21"
+    },
+    {
+     "type": "fill",
+     "q": "thirty, forty, ___",
+     "opts": [
+      "fifty",
+      "fifteen"
+     ],
+     "a": "fifty",
+     "full": {
+      "en": "thirty, forty, fifty"
+     },
+     "tr": "שלושים, ארבעים, חמישים"
+    },
+    {
+     "type": "listen",
+     "word": "70"
+    }
+   ],
+   "level": "basic"
+  }
+ ],
+ "dialogs": [
+  {
+   "id": "howareyou",
+   "title": "מה שלומך?",
+   "icon": "😀",
+   "steps": [
+    {
+     "t": [
+      {
+       "en": "Hello! How are you?"
+      },
+      {
+       "he": "שלום! מה שלומכם?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "😀",
+       "en": "I'm happy!",
+       "tr": "אני שמח",
+       "r": [
+        {
+         "en": "Yay! I'm happy too!"
+        }
+       ]
+      },
+      {
+       "emoji": "😴",
+       "en": "I'm tired.",
+       "tr": "אני עייף",
+       "r": [
+        {
+         "en": "Oh, you are tired. Let's rest a little."
+        }
+       ]
+      },
+      {
+       "emoji": "😋",
+       "en": "I'm hungry!",
+       "tr": "אני רעב",
+       "r": [
+        {
+         "en": "Me too! Let's eat something yummy."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "Do you want to play?"
+      },
+      {
+       "he": "רוצים לשחק?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "👍",
+       "en": "Yes!",
+       "tr": "כן",
+       "r": [
+        {
+         "en": "Great! Let's play!"
+        }
+       ]
+      },
+      {
+       "emoji": "👎",
+       "en": "No, thank you.",
+       "tr": "לא, תודה",
+       "r": [
+        {
+         "en": "Okay! Maybe later."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "Bye bye! See you soon!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "colors",
+   "title": "הצבע שאני אוהב",
+   "icon": "🌈",
+   "steps": [
+    {
+     "t": [
+      {
+       "en": "What is your favorite color?"
+      },
+      {
+       "he": "מה הצבע שאתם הכי אוהבים?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "🔴",
+       "en": "Red!",
+       "tr": "אדום",
+       "r": [
+        {
+         "en": "Red! I love red!"
+        }
+       ]
+      },
+      {
+       "emoji": "🔵",
+       "en": "Blue!",
+       "tr": "כחול",
+       "r": [
+        {
+         "en": "Blue! Like the sky!"
+        }
+       ]
+      },
+      {
+       "emoji": "🟢",
+       "en": "Green!",
+       "tr": "ירוק",
+       "r": [
+        {
+         "en": "Green! Like the grass!"
+        }
+       ]
+      },
+      {
+       "emoji": "🩷",
+       "en": "Pink!",
+       "tr": "ורוד",
+       "r": [
+        {
+         "en": "Pink! So pretty!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "pic": "☀️",
+     "quiz": true,
+     "t": [
+      {
+       "en": "Look! What color is the sun?"
+      },
+      {
+       "he": "איזה צבע השמש?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "🟡",
+       "en": "Yellow!",
+       "ok": true,
+       "r": [
+        {
+         "en": "Yes! The sun is yellow!"
+        }
+       ]
+      },
+      {
+       "emoji": "🔵",
+       "en": "Blue!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      },
+      {
+       "emoji": "🟣",
+       "en": "Purple!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "pic": "🍎",
+     "quiz": true,
+     "t": [
+      {
+       "en": "What color is the apple?"
+      },
+      {
+       "he": "ואיזה צבע התפוח?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "🟢",
+       "en": "Green!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      },
+      {
+       "emoji": "🔴",
+       "en": "Red!",
+       "ok": true,
+       "r": [
+        {
+         "en": "Yes! The apple is red!"
+        }
+       ]
+      },
+      {
+       "emoji": "⚫",
+       "en": "Black!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "You know so many colors!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zoo",
+   "title": "בגן החיות",
+   "icon": "🦁",
+   "steps": [
+    {
+     "t": [
+      {
+       "en": "Let's go to the zoo!"
+      },
+      {
+       "he": "בואו נלך לגן החיות!"
+      }
+     ]
+    },
+    {
+     "pic": "🦁",
+     "quiz": true,
+     "t": [
+      {
+       "en": "What animal is this?"
+      },
+      {
+       "he": "איזו חיה זאת?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "🦁",
+       "en": "A lion!",
+       "ok": true,
+       "r": [
+        {
+         "en": "Yes! It's a lion! Roar!"
+        }
+       ]
+      },
+      {
+       "emoji": "🐱",
+       "en": "A cat!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      },
+      {
+       "emoji": "🐶",
+       "en": "A dog!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "pic": "🐘",
+     "quiz": true,
+     "t": [
+      {
+       "en": "And what animal is this?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "🐮",
+       "en": "A cow!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      },
+      {
+       "emoji": "🐘",
+       "en": "An elephant!",
+       "ok": true,
+       "r": [
+        {
+         "en": "Yes! A big gray elephant!"
+        }
+       ]
+      },
+      {
+       "emoji": "🐟",
+       "en": "A fish!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "pic": "🐒",
+     "quiz": true,
+     "t": [
+      {
+       "en": "Who is this?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "🐒",
+       "en": "A monkey!",
+       "ok": true,
+       "r": [
+        {
+         "en": "Yes! A funny monkey! Ooh ooh, ah ah!"
+        }
+       ]
+      },
+      {
+       "emoji": "🦆",
+       "en": "A duck!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      },
+      {
+       "emoji": "🐴",
+       "en": "A horse!",
+       "r": [
+        {
+         "en": "Hmm, look again!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "What a fun day at the zoo!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "picnic",
+   "title": "פיקניק",
+   "icon": "🧺",
+   "steps": [
+    {
+     "t": [
+      {
+       "en": "Let's have a picnic! What do you want to eat?"
+      },
+      {
+       "he": "מה תרצו לאכול?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "🍕",
+       "en": "Pizza, please!",
+       "tr": "פיצה, בבקשה",
+       "r": [
+        {
+         "en": "Pizza! Yummy!"
+        }
+       ]
+      },
+      {
+       "emoji": "🍎",
+       "en": "An apple, please!",
+       "tr": "תפוח, בבקשה",
+       "r": [
+        {
+         "en": "An apple! Healthy and yummy!"
+        }
+       ]
+      },
+      {
+       "emoji": "🍦",
+       "en": "Ice cream, please!",
+       "tr": "גלידה, בבקשה",
+       "r": [
+        {
+         "en": "Ice cream! Cold and sweet!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "What do you want to drink?"
+      },
+      {
+       "he": "ומה תרצו לשתות?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "🥛",
+       "en": "Milk, please!",
+       "tr": "חלב, בבקשה",
+       "r": [
+        {
+         "en": "Milk! Good for you!"
+        }
+       ]
+      },
+      {
+       "emoji": "💧",
+       "en": "Water, please!",
+       "tr": "מים, בבקשה",
+       "r": [
+        {
+         "en": "Water! Very good!"
+        }
+       ]
+      },
+      {
+       "emoji": "🧃",
+       "en": "Juice, please!",
+       "tr": "מיץ, בבקשה",
+       "r": [
+        {
+         "en": "Juice! Sweet and yummy!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "Thank you for the picnic!"
+      },
+      {
+       "he": "תודה על הפיקניק!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "count",
+   "title": "סופרים יחד",
+   "icon": "⭐",
+   "steps": [
+    {
+     "t": [
+      {
+       "en": "Let's count together!"
+      },
+      {
+       "he": "בואו נספור יחד!"
+      }
+     ]
+    },
+    {
+     "pic": "⭐⭐⭐",
+     "quiz": true,
+     "t": [
+      {
+       "en": "How many stars?"
+      },
+      {
+       "he": "כמה כוכבים יש?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "2",
+       "en": "Two!",
+       "r": [
+        {
+         "en": "Hmm, let's count again!"
+        }
+       ]
+      },
+      {
+       "emoji": "3",
+       "en": "Three!",
+       "ok": true,
+       "r": [
+        {
+         "en": "Yes! Three stars!"
+        }
+       ]
+      },
+      {
+       "emoji": "5",
+       "en": "Five!",
+       "r": [
+        {
+         "en": "Hmm, let's count again!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "pic": "🎈🎈",
+     "quiz": true,
+     "t": [
+      {
+       "en": "How many balloons?"
+      },
+      {
+       "he": "כמה בלונים?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "2",
+       "en": "Two!",
+       "ok": true,
+       "r": [
+        {
+         "en": "Yes! Two balloons!"
+        }
+       ]
+      },
+      {
+       "emoji": "4",
+       "en": "Four!",
+       "r": [
+        {
+         "en": "Hmm, let's count again!"
+        }
+       ]
+      },
+      {
+       "emoji": "1",
+       "en": "One!",
+       "r": [
+        {
+         "en": "Hmm, let's count again!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "pic": "🐥🐥🐥🐥",
+     "quiz": true,
+     "t": [
+      {
+       "en": "How many chicks?"
+      },
+      {
+       "he": "כמה אפרוחים?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "3",
+       "en": "Three!",
+       "r": [
+        {
+         "en": "Hmm, let's count again!"
+        }
+       ]
+      },
+      {
+       "emoji": "4",
+       "en": "Four!",
+       "ok": true,
+       "r": [
+        {
+         "en": "Yes! Four little chicks! Peep peep!"
+        }
+       ]
+      },
+      {
+       "emoji": "6",
+       "en": "Six!",
+       "r": [
+        {
+         "en": "Hmm, let's count again!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "You are great at counting!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aboutme",
+   "title": "על עצמי",
+   "icon": "🙋",
+   "steps": [
+    {
+     "t": [
+      {
+       "en": "How old are you?"
+      },
+      {
+       "he": "בני כמה אתם?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "3",
+       "en": "I am three.",
+       "tr": "אני בן שלוש",
+       "r": [
+        {
+         "en": "Three! You are big!"
+        }
+       ]
+      },
+      {
+       "emoji": "7",
+       "en": "I am seven.",
+       "tr": "אני בן שבע",
+       "r": [
+        {
+         "en": "Seven! Wow!"
+        }
+       ]
+      },
+      {
+       "emoji": "9",
+       "en": "I am nine.",
+       "tr": "אני בן תשע",
+       "r": [
+        {
+         "en": "Nine! So cool!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "Do you have a pet?"
+      },
+      {
+       "he": "יש לכם חיית מחמד?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "🐶",
+       "en": "I have a dog.",
+       "tr": "יש לי כלב",
+       "r": [
+        {
+         "en": "A dog! Woof woof!"
+        }
+       ]
+      },
+      {
+       "emoji": "🐱",
+       "en": "I have a cat.",
+       "tr": "יש לי חתול",
+       "r": [
+        {
+         "en": "A cat! Meow!"
+        }
+       ]
+      },
+      {
+       "emoji": "🚫",
+       "en": "No, I don't.",
+       "tr": "לא, אין לי",
+       "r": [
+        {
+         "en": "That's okay!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "What do you like to do?"
+      },
+      {
+       "he": "מה אתם אוהבים לעשות?"
+      }
+     ],
+     "opts": [
+      {
+       "emoji": "⚽",
+       "en": "I like to play ball.",
+       "tr": "אני אוהב לשחק בכדור",
+       "r": [
+        {
+         "en": "Me too! Let's play ball!"
+        }
+       ]
+      },
+      {
+       "emoji": "🎨",
+       "en": "I like to draw.",
+       "tr": "אני אוהב לצייר",
+       "r": [
+        {
+         "en": "Drawing is so much fun!"
+        }
+       ]
+      },
+      {
+       "emoji": "💃",
+       "en": "I like to dance.",
+       "tr": "אני אוהב לרקוד",
+       "r": [
+        {
+         "en": "Let's dance together!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": [
+      {
+       "en": "It was so nice to talk to you!"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "placement": {
+  "sections": [
+   {
+    "level": "starter",
+    "pass": "basic",
+    "items": [
+     {
+      "type": "pick",
+      "emoji": [
+       "🐶",
+       "🐱",
+       "🐮",
+       "🦆"
+      ],
+      "a": 0,
+      "say": {
+       "en": "dog"
+      }
+     },
+     {
+      "type": "pick",
+      "emoji": [
+       "🔵",
+       "🔴",
+       "🟢",
+       "🟡"
+      ],
+      "a": 1,
+      "say": {
+       "en": "red"
+      }
+     },
+     {
+      "type": "pick",
+      "emoji": [
+       "🍌",
+       "🍞",
+       "🍎",
+       "🥛"
+      ],
+      "a": 2,
+      "say": {
+       "en": "apple"
+      }
+     },
+     {
+      "type": "pick",
+      "emoji": [
+       "4",
+       "7",
+       "3",
+       "9"
+      ],
+      "a": 1,
+      "say": {
+       "en": "seven"
+      }
+     }
+    ]
+   },
+   {
+    "level": "basic",
+    "pass": "explorer",
+    "items": [
+     {
+      "type": "fill",
+      "q": "I ___ happy.",
+      "opts": [
+       "am",
+       "is",
+       "are"
+      ],
+      "a": "am",
+      "full": {
+       "en": "I am happy."
+      },
+      "tr": "אני שמח"
+     },
+     {
+      "type": "fill",
+      "q": "She ___ a cat.",
+      "opts": [
+       "have",
+       "has"
+      ],
+      "a": "has",
+      "full": {
+       "en": "She has a cat."
+      },
+      "tr": "יש לה חתול"
+     },
+     {
+      "type": "fill",
+      "q": "___ apple",
+      "opts": [
+       "a",
+       "an"
+      ],
+      "a": "an",
+      "full": {
+       "en": "an apple"
+      },
+      "tr": "תפוח"
+     },
+     {
+      "type": "fill",
+      "q": "A fish ___ fly.",
+      "opts": [
+       "can",
+       "can't"
+      ],
+      "a": "can't",
+      "full": {
+       "en": "A fish can't fly."
+      },
+      "tr": "דג לא יכול לעוף"
+     },
+     {
+      "type": "fill",
+      "q": "___ is your name?",
+      "opts": [
+       "What",
+       "Who",
+       "Where"
+      ],
+      "a": "What",
+      "full": {
+       "en": "What is your name?"
+      },
+      "tr": "מה השם שלך?"
+     }
+    ]
+   },
+   {
+    "level": "explorer",
+    "pass": "reader",
+    "items": [
+     {
+      "type": "fill",
+      "q": "He ___ football every day.",
+      "opts": [
+       "play",
+       "plays"
+      ],
+      "a": "plays",
+      "full": {
+       "en": "He plays football every day."
+      },
+      "tr": "הוא משחק כדורגל כל יום"
+     },
+     {
+      "type": "fill",
+      "q": "___ you like pizza?",
+      "opts": [
+       "Do",
+       "Does"
+      ],
+      "a": "Do",
+      "full": {
+       "en": "Do you like pizza?"
+      },
+      "tr": "אתה אוהב פיצה?"
+     },
+     {
+      "type": "fill",
+      "q": "Look! They are ___ now.",
+      "opts": [
+       "swim",
+       "swimming"
+      ],
+      "a": "swimming",
+      "full": {
+       "en": "Look! They are swimming now."
+      },
+      "tr": "תראה! הם שוחים עכשיו"
+     },
+     {
+      "type": "fill",
+      "q": "There ___ three cats.",
+      "opts": [
+       "is",
+       "are"
+      ],
+      "a": "are",
+      "full": {
+       "en": "There are three cats."
+      },
+      "tr": "יש שלושה חתולים"
+     }
+    ]
+   },
+   {
+    "level": "reader",
+    "pass": "reader",
+    "items": [
+     {
+      "type": "fill",
+      "q": "Yesterday I ___ to the park.",
+      "opts": [
+       "go",
+       "went"
+      ],
+      "a": "went",
+      "full": {
+       "en": "Yesterday I went to the park."
+      },
+      "tr": "אתמול הלכתי לפארק"
+     },
+     {
+      "type": "fill",
+      "q": "Tomorrow we are going ___ visit grandma.",
+      "opts": [
+       "to",
+       "for"
+      ],
+      "a": "to",
+      "full": {
+       "en": "Tomorrow we are going to visit grandma."
+      },
+      "tr": "מחר אנחנו הולכים לבקר את סבתא"
+     },
+     {
+      "type": "fill",
+      "q": "The elephant is the ___ animal.",
+      "opts": [
+       "big",
+       "biggest"
+      ],
+      "a": "biggest",
+      "full": {
+       "en": "The elephant is the biggest animal."
+      },
+      "tr": "הפיל הוא החיה הכי גדולה"
+     }
+    ]
+   }
+  ]
+ }
+}

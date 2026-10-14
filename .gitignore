@@ -1,0 +1,6 @@
+tools/cache/
+samples/
+_preview.html
+.claude/
+__pycache__/
+/audio/
